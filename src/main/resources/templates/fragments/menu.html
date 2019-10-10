@@ -1,0 +1,3 @@
+<div th:each="item : ${menu}">
+    <a th:text="${item}" th:href="@{./} + ${item.toLowerCase()}"></a>
+</div>
