@@ -1,0 +1,51 @@
+html {
+  font-family: 'Armata', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(bg.jpg);
+  background-size: 25%;
+}
+
+#menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin-top: 150px;
+  font-weight: normal;
+}
+
+.menu-item {
+   padding-right: 30px;
+}
+
+#logo {
+  font-family: 'Gothic A1', sans-serif;
+  position: absolute;
+  top: 50%;
+  line-height: 150px;
+  font-size: 150px;
+  margin-top: -75px;
+  background-size: 10%;
+  background-image: url(http://giphygifs.s3.amazonaws.com/media/dwaeIbBnF6HBu/giphy.gif);
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  filter: grayscale(50%);
+}

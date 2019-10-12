@@ -1,3 +1,7 @@
-<div th:each="item : ${menu}">
-    <a th:text="${item}" th:href="@{./} + ${item.toLowerCase()}"></a>
+<div id="menu-container">
+    <div>
+        <a class="menu-item" th:each="item : ${menu[1]}" th:text="${item.toUpperCase()}"
+           th:href="@{./} + ${item.toLowerCase()}"></a>
+    </div>
+    <a th:text="${menu[2][0].toUpperCase()}" th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
 </div>
