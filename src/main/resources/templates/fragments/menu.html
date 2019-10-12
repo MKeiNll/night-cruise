@@ -1,7 +1,22 @@
-<div id="menu-container">
+<div id="menu-container" xmlns="http://www.w3.org/1999/html">
     <div>
         <a class="menu-item" th:each="item : ${menu[1]}" th:text="${item.toUpperCase()}"
            th:href="@{./} + ${item.toLowerCase()}"></a>
     </div>
-    <a th:text="${menu[2][0].toUpperCase()}" th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
+    <a th:if="${menu[2][0] eq 'Home'}" th:text="${menu[2][0].toUpperCase()}"
+       th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
+</div>
+<div th:if="${menu[2][0] eq 'Theme'}" id="theme-select-container">
+    <input type="checkbox" id="theme-checkbox"/>
+    <label for="theme-checkbox">
+        <div id="theme-select">
+            <a th:text="${menu[2][0].toUpperCase()}" id="theme-link"></a>
+            <div id="theme-option-container">
+                <a class="theme-option">GOTHIC GOSHA</a>
+                <a class="theme-option">SALINE</a>
+                <a class="theme-option">LEV GIRICH</a>
+                <a class="theme-option">RANDOM</a>
+            </div>
+        </div>
+    </label>
 </div>

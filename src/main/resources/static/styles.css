@@ -49,3 +49,77 @@ body {
   -webkit-background-clip: text;
   filter: grayscale(50%);
 }
+
+#theme-checkbox {
+  display: none;
+}
+
+#theme-checkbox:checked + label > #theme-select {
+  background-color: blue;
+  width: 160px;
+  height: 120px;
+}
+
+#theme-checkbox:checked + label #theme-link {
+  display: none;
+}
+
+#theme-checkbox:checked + label #theme-option-container {
+  visibility: visible;
+}
+
+#theme-select:hover {
+  cursor: pointer;
+}
+
+#theme-select {
+  display: inline-block;
+  background-color: red;
+  width: 80px;
+  height: 18px;
+  position: relative;
+  right: 80px;
+  overflow: hidden;
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+}
+
+#theme-select-container {
+    position: relative;
+    bottom: 18px;
+}
+
+#theme-option-container {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.theme-option {
+  padding-top: 5px;
+  white-space: nowrap;
+}
+
+.page-title {
+  width: 900px;
+  color: DarkGray;
+  margin-bottom: 30px;
+}
+
+.title {
+  width: 900px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.paragraph {
+  width: 900px;
+  text-align: justify;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  padding-left: 15px;
+}
