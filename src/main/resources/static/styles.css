@@ -27,10 +27,19 @@ body {
   width: 900px;
   margin-top: 150px;
   font-weight: normal;
+  position: relative;
 }
 
 .menu-item {
    padding-right: 30px;
+}
+
+#theme-button {
+  display: inline-block;
+}
+
+#side-menu-item {
+  align-self: flex-end;
 }
 
 #logo {
@@ -65,7 +74,7 @@ body {
 }
 
 #theme-checkbox:checked + label #theme-option-container {
-  visibility: visible;
+  display: flex;
 }
 
 #theme-select:hover {
@@ -73,31 +82,29 @@ body {
 }
 
 #theme-select {
-  display: inline-block;
   background-color: red;
   width: 80px;
   height: 18px;
-  position: relative;
-  right: 80px;
+  position: absolute;
   overflow: hidden;
   -webkit-transition: width 1s, height 1s;
   transition: width 1s, height 1s;
 }
 
-#theme-select-container {
-    position: relative;
-    bottom: 18px;
-}
-
 #theme-option-container {
-  visibility: hidden;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
+  position:absolute;
+  z-index: 1;
+}
+
+#left-menu-container {
+  display: inherit;
 }
 
 .theme-option {
-  padding-top: 5px;
+  padding-bottom: 5px;
   white-space: nowrap;
 }
 
