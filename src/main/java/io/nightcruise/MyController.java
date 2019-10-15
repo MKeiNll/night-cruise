@@ -18,30 +18,35 @@ public class MyController {
     public static final String TAR_MENU_LABEL = "Tar";
     public static final String HOME_MENU_LABEL = "Home";
     public static final String THEME_MENU_LABEL = "Theme";
+    public static final String LANGUAGE_MENU_LABEL = "Language";
 
-    public static final String[] MENU_LABELS = {ABOUT_MENU_LABEL, DEV_MENU_LABEL, TAR_MENU_LABEL, THEME_MENU_LABEL};
+    public static final String[] MENU_LABELS = {ABOUT_MENU_LABEL, DEV_MENU_LABEL, TAR_MENU_LABEL, THEME_MENU_LABEL, LANGUAGE_MENU_LABEL};
 
     @GetMapping("/")
     public String getHome(Model model) {
-        model.addAttribute("menu", new String[][]{{HOME_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
+        model.addAttribute("menu", new String[][]{{HOME_PAGE_TITLE}, MENU_LABELS});
+        model.addAttribute("current", "home");
         return "home.html";
     }
 
     @GetMapping("/about")
     public String getAbout(Model model) {
         model.addAttribute("menu", new String[][]{{ABOUT_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
+        model.addAttribute("current", "about");
         return "about.html";
     }
 
     @GetMapping("/developments")
     public String getDevelopments(Model model) {
         model.addAttribute("menu", new String[][]{{DEV_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
+        model.addAttribute("current", "developments");
         return "developments.html";
     }
 
     @GetMapping("/tar")
     public String getTar(Model model) {
         model.addAttribute("menu", new String[][]{{TAR_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
+        model.addAttribute("current", "tar");
         return "tar.html";
     }
 }

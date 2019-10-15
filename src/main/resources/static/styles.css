@@ -19,6 +19,7 @@ body {
   align-items: center;
   background-image: url(bg.jpg);
   background-size: 25%;
+  margin-right: 500px;
 }
 
 #menu-container {
@@ -34,8 +35,8 @@ body {
    padding-right: 30px;
 }
 
-#theme-button {
-  display: inline-block;
+.menu-item-selected {
+  font-weight: bold;
 }
 
 #side-menu-item {
@@ -59,22 +60,16 @@ body {
   filter: grayscale(50%);
 }
 
+#theme-button {
+  display: inline-block;
+}
+
 #theme-checkbox {
   display: none;
 }
 
-#theme-checkbox:checked + label > #theme-select {
-  background-color: blue;
-  width: 160px;
+#theme-checkbox:checked + label ~ #theme-option-container {
   height: 120px;
-}
-
-#theme-checkbox:checked + label #theme-link {
-  display: none;
-}
-
-#theme-checkbox:checked + label #theme-option-container {
-  display: flex;
 }
 
 #theme-select:hover {
@@ -82,30 +77,71 @@ body {
 }
 
 #theme-select {
-  background-color: red;
-  width: 80px;
   height: 18px;
-  position: absolute;
   overflow: hidden;
-  -webkit-transition: width 1s, height 1s;
-  transition: width 1s, height 1s;
 }
 
 #theme-option-container {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position:absolute;
+  top: 18px;
   z-index: 1;
-}
-
-#left-menu-container {
-  display: inherit;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  background-color: blue;
+  height: 0px;
+  overflow: hidden;
 }
 
 .theme-option {
   padding-bottom: 5px;
   white-space: nowrap;
+}
+
+#lang-button {
+  display: inline-block;
+}
+
+#lang-checkbox {
+  display: none;
+}
+
+#lang-checkbox:checked + label ~ #lang-option-container {
+  height: 120px;
+}
+
+#lang-select:hover {
+  cursor: pointer;
+}
+
+#lang-select {
+  height: 18px;
+  overflow: hidden;
+}
+
+#lang-option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position:absolute;
+  top: 18px;
+  z-index: 1;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  background-color: blue;
+  height: 0px;
+  overflow: hidden;
+}
+
+.lang-option {
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+#left-menu-container {
+  display: inherit;
 }
 
 .page-title {
@@ -116,9 +152,10 @@ body {
 
 .title {
   width: 900px;
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 15px;
   padding-left: 15px;
+  font-size: 24px;
 }
 
 .paragraph {
@@ -127,6 +164,5 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 50px;
   padding-left: 15px;
 }
