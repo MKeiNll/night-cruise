@@ -3,12 +3,13 @@
         <th:block th:each="item : ${menu[1]}">
             <a th:unless="${item.equals('Theme') || item.equals('Language')}" class="menu-item"
                th:text="${item.toUpperCase()}"
-               th:href="@{./} + ${item.toLowerCase()}" th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null"></a>
+               th:href="@{./} + ${item.toLowerCase()}"
+               th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null"></a>
             <div th:if="${item.equals('Theme')}" id="theme-button" class="menu-item">
                 <input type="checkbox" id="theme-checkbox"/>
                 <label for="theme-checkbox">
                     <div id="theme-select">
-                        <a th:text="${item.toUpperCase()}" id="theme-link"></a>
+                        <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>
                     </div>
                 </label>
                 <div id="theme-option-container">
@@ -22,7 +23,7 @@
                 <input type="checkbox" id="lang-checkbox"/>
                 <label for="lang-checkbox">
                     <div id="lang-select">
-                        <a th:text="${item.toUpperCase()}" id="lang-link"></a>
+                        <a th:text="${item.toUpperCase() + '&nbsp;'}" id="lang-link"></a>
                     </div>
                 </label>
                 <div id="lang-option-container">
@@ -31,9 +32,8 @@
                     <a class="lang-option">ESTONIAN</a>
                 </div>
             </div>
-            <a th:if="${item.equals('Home')}" id="side-menu-item" th:text="${item.toUpperCase()}"
-               th:href="@{./} + ${item.toLowerCase()}"></a>
         </th:block>
     </div>
-    <a th:if="${menu.length > 2}" th:text="${menu[2][0].toUpperCase()}" th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
+    <a th:if="${menu.length > 2}" th:text="${'< ' + menu[2][0].toUpperCase()}"
+       th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
 </div>
