@@ -34,6 +34,6 @@
             </div>
         </th:block>
     </div>
-    <a th:if="${menu.length > 2}" th:text="${'< ' + menu[2][0].toUpperCase()}"
+    <a th:if="${menu.length > 2}" th:text="${'< ' + menu[2][0]}"
        th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
 </div>
