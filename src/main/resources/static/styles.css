@@ -46,7 +46,7 @@ body {
   align-items: center;
   margin-right: 500px;
 
-  color: #999;
+  color: rgb(64, 64, 64);
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
   background-repeat: repeat;
   overflow-x: hidden;
@@ -65,6 +65,37 @@ a {
 
 a:hover {
   color: gray;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  line-height: 24px;
+  max-width: 900px;
+  text-align: justify;
+  margin-left: -10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+h2 {
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 24px;
+  color: black;
+  font-style: italic;
+}
+
+.paragraph-container {
+  width: 900px;
+  display: flex;
+  align-items: flex-start;
 }
 
 #menu-container {
@@ -161,13 +192,13 @@ a:hover {
 
 #theme-link {
   font-style: italic;
-  background-color: rgba(192, 192, 192, 0.3);
-  color: LightSlateGrey;
+  background-color: rgba(192, 192, 255, 0.3);
+  color: Gray;
 }
 
 #theme-link:hover {
-  background-color: rgba(192, 192, 192, 0.1);
-  color: SkyBlue;
+  background-color: rgba(192, 192, 255, 0.15);
+  color: LightGray;
 }
 
 #lang-button {
@@ -212,41 +243,17 @@ a:hover {
 
 #lang-link {
   font-style: italic;
-  background-color: rgba(192, 192, 192, 0.3);
-  color: LightSlateGrey;
+  background-color: rgba(255, 192, 192, 0.3);
+  color: Gray;
 }
 
 #lang-link:hover {
-  background-color: rgba(192, 192, 192, 0.1);
-  color: SkyBlue;
+  background-color: rgba(255, 192, 192, 0.15);
+  color: LightGray;
 }
 
 #left-menu-container {
   display: inherit;
-}
-
-.page-title {
-  width: 900px;
-  color: DarkGray;
-  margin-bottom: 30px;
-}
-
-.title {
-  width: 900px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-  padding-left: 15px;
-  font-size: 24px;
-  color: black;
-}
-
-.paragraph {
-  width: 900px;
-  text-align: justify;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 15px;
 }
 
 #menu-icon {
