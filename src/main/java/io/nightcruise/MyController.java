@@ -12,7 +12,7 @@ public class MyController {
     public static final String ABOUT_PAGE_TITLE = "About";
     public static final String DEV_PAGE_TITLE = "Developments";
     public static final String SUPER_3_PAGE_TITLE = "SUPER_3";
-    public static final String TAR_PAGE_TITLE = "Tar";
+    public static final String TAR_PAGE_TITLE = "TAR";
 
     public static final String ABOUT_MENU_LABEL = "About";
     public static final String DEV_MENU_LABEL = "Developments";

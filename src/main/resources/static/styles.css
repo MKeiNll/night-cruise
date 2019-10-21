@@ -83,6 +83,7 @@ a:hover {
 
 .menu-item-selected {
   font-weight: bold;
+  pointer-events: none;
 }
 
 #side-menu-item {
