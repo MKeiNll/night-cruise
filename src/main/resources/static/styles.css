@@ -49,6 +49,7 @@ body {
   color: #999;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 html {
@@ -93,23 +94,29 @@ a:hover {
   height: 475px;
   text-align: center;
   background-color: rgba(192, 192, 192, 0.25);
+  background-image: url(stripes.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
   position: absolute;
   top: 170px;
+  z-index: -100;
 }
 
 #logo {
-  line-height: 180px;
+  line-height: 220px;
   font-size: 220px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Audiowide", cursive;
   font-weight: bold;
-  background-size: 7%;
-  background-image: url(http://giphygifs.s3.amazonaws.com/media/dwaeIbBnF6HBu/giphy.gif);
+  background-size: 10%;
+  background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
   background-position: center;
   color: transparent;
   background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  filter: saturate(60%);
+  filter: saturate(500%);
+  text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 #theme-button {
