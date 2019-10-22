@@ -150,23 +150,33 @@ h2 {
 
 #theme-button {
   display: inline-block;
+  position: relative;
 }
 
-#theme-checkbox {
-  display: none;
+#theme-link {
+  font-style: italic;
+  background-color: rgba(192, 192, 255, 0.3);
+  color: DarkGray;
 }
 
-#theme-checkbox:checked + label ~ #theme-option-container {
-  height: 120px;
-}
-
-#theme-select:hover {
+#theme-link:hover {
+  background-color: rgba(192, 192, 255, 0.15);
+  color: LightGray;
   cursor: pointer;
 }
 
-#theme-select {
-  height: 18px;
-  overflow: hidden;
+#theme-button:hover > #theme-option-container {
+  height: 171px;
+  width: 155px;
+  -webkit-transition: width 0.4s, height 0.4s;
+  transition: width 0.4s, height 0.4s;
+}
+
+#theme-options {
+  position: relative;
+  top: 27px;
+  height: 144px;
+  width: 155px;
 }
 
 #theme-option-container {
@@ -174,50 +184,63 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 18px;
+  left: -9px;
   z-index: 1;
-  -webkit-transition: height 1s;
-  transition: height 1s;
-  background-color: blue;
+  -webkit-transition: width 0.15s, height 0.15s;
+  transition: width 0.15s, height 0.15s;
   height: 0px;
+  width: 0px;
   overflow: hidden;
 }
 
-.theme-option {
-  padding-bottom: 5px;
-  white-space: nowrap;
-}
-
-#theme-link {
-  font-style: italic;
-  background-color: rgba(192, 192, 255, 0.3);
-  color: Gray;
-}
-
-#theme-link:hover {
+#theme-option-container:hover ~ #theme-link {
   background-color: rgba(192, 192, 255, 0.15);
   color: LightGray;
 }
 
+.theme-option {
+  padding: 9px;
+  white-space: nowrap;
+  display: inline-block;
+  width: 155px;
+  background-color: WhiteSmoke;
+}
+
+.theme-option:hover:not(#theme-current) {
+  cursor: pointer;
+  background-color: LightGray;
+  color: white;
+}
+
 #lang-button {
   display: inline-block;
+  position: relative;
 }
 
-#lang-checkbox {
-  display: none;
+#lang-link {
+  font-style: italic;
+  background-color: rgba(255, 192, 192, 0.3);
+  color: DarkGray;
 }
 
-#lang-checkbox:checked + label ~ #lang-option-container {
-  height: 120px;
-}
-
-#lang-select:hover {
+#lang-link:hover {
+  background-color: rgba(255, 192, 192, 0.15);
+  color: LightGray;
   cursor: pointer;
 }
 
-#lang-select {
-  height: 18px;
-  overflow: hidden;
+#lang-button:hover > #lang-option-container {
+  height: 135px;
+  width: 155px;
+  -webkit-transition: width 0.4s, height 0.4s;
+  transition: width 0.4s, height 0.4s;
+}
+
+#lang-options {
+  position: relative;
+  top: 27px;
+  height: 108px;
+  width: 155px;
 }
 
 #lang-option-container {
@@ -225,31 +248,46 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 18px;
+  left: -9px;
   z-index: 1;
-  -webkit-transition: height 1s;
-  transition: height 1s;
-  background-color: blue;
+  -webkit-transition: width 0.15s, height 0.15s;
+  transition: width 0.15s, height 0.15s;
   height: 0px;
+  width: 0px;
   overflow: hidden;
 }
 
-.lang-option {
-  padding-bottom: 5px;
-  white-space: nowrap;
-}
-
-#lang-link {
-  font-style: italic;
-  background-color: rgba(255, 192, 192, 0.3);
-  color: Gray;
-}
-
-#lang-link:hover {
+#lang-option-container:hover ~ #lang-link {
   background-color: rgba(255, 192, 192, 0.15);
   color: LightGray;
 }
 
-#left-menu-container {
-  display: inherit;
+.lang-option {
+  padding: 9px;
+  white-space: nowrap;
+  display: inline-block;
+  width: 155px;
+  background-color: WhiteSmoke;
+}
+
+.lang-option:hover:not(#lang-current) {
+  cursor: pointer;
+  background-color: LightGray;
+  color: white;
+}
+
+#theme-current {
+  background-color: rgb(192, 192, 255);
+}
+
+#lang-current {
+  background-color: rgb(255, 192, 192);
+}
+
+#theme-current:hover {
+  color: black;
+}
+
+#lang-current:hover {
+  color: black;
 }
