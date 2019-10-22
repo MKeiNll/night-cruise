@@ -68,7 +68,7 @@ a:hover {
 }
 
 p {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(192, 192, 192, 0.25);
   padding-left: 18px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -129,8 +129,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: top center;
   position: absolute;
-  top: 170px;
-  z-index: -100;
+  top: 170px;  z-index: -100;
 }
 
 #logo {
