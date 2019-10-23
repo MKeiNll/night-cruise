@@ -166,7 +166,7 @@ h2 {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 171px;
+  height: 153px;
   width: 155px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
@@ -174,9 +174,9 @@ h2 {
 
 #theme-options {
   position: relative;
-  top: 27px;
   height: 144px;
   width: 155px;
+  top: 9px;
 }
 
 #theme-option-container {
@@ -185,6 +185,7 @@ h2 {
   align-items: flex-start;
   position: absolute;
   left: -9px;
+  top: 18px;
   z-index: 1;
   -webkit-transition: width 0.15s, height 0.15s;
   transition: width 0.15s, height 0.15s;
@@ -230,7 +231,7 @@ h2 {
 }
 
 #lang-button:hover > #lang-option-container {
-  height: 135px;
+  height: 117px;
   width: 155px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
@@ -238,9 +239,9 @@ h2 {
 
 #lang-options {
   position: relative;
-  top: 27px;
   height: 108px;
   width: 155px;
+  top: 9px;
 }
 
 #lang-option-container {
@@ -249,6 +250,7 @@ h2 {
   align-items: flex-start;
   position: absolute;
   left: -9px;
+  top: 18px;
   z-index: 1;
   -webkit-transition: width 0.15s, height 0.15s;
   transition: width 0.15s, height 0.15s;
