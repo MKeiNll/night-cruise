@@ -331,6 +331,9 @@ h2 {
   margin-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.time-created-border {
   border-bottom: 1px solid rgba(64, 64, 64, 0.5);
 }
 

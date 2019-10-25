@@ -11,7 +11,7 @@
         The source code of this website can be found on GitHub.<br/><br/>
         Credits to <b>John Titor</b> for background image<br/>
         Credits to <b>Mark Zuckerberg</b> for logo background animation
-        <div th:replace="fragments/time"></div>
+        <div th:replace="fragments/time(created=${aboutCreated}, updated=${aboutUpdated})"></div>
     </div>
 </div>
 <h2 class="title">
@@ -23,7 +23,7 @@
         <b>Languages:</b> Russian<br/>
         <b>Technologies:</b> Spring boot<br/>
         <b>Work experience:</b> 10 years at Google
-        <div th:replace="fragments/time-small"></div>
+        <div th:replace="fragments/time(updated=${cvUpdated})"></div>
     </div>
 </div>
 </body>

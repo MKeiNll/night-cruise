@@ -35,6 +35,9 @@ public class MyController {
     public String getAbout(Model model) {
         model.addAttribute("menu", new String[][]{{ABOUT_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "about");
+        model.addAttribute("aboutCreated", "12.12.2008");
+        model.addAttribute("aboutUpdated", "21.03.2014");
+        model.addAttribute("cvUpdated", "21.08.2015");
         return "about";
     }
 
@@ -42,6 +45,10 @@ public class MyController {
     public String getDevelopments(Model model) {
         model.addAttribute("menu", new String[][]{{DEV_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "developments");
+        model.addAttribute("sporexCreated", "12.12.2008");
+        model.addAttribute("sporexUpdated", "21.03.2014");
+        model.addAttribute("mbfCreated", "12.12.2008");
+        model.addAttribute("mbfUpdated", "21.03.2014");
         return "developments";
     }
 
@@ -49,6 +56,11 @@ public class MyController {
     public String getTar(Model model) {
         model.addAttribute("menu", new String[][]{{TAR_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "tar");
+        model.addAttribute("towatchedUpdated", "12.12.2008");
+        model.addAttribute("toreadUpdated", "21.03.2014");
+        model.addAttribute("toplayedUpdated", "12.12.2008");
+        model.addAttribute("tolearnedUpdated", "21.03.2014");
+        model.addAttribute("xxxtarUpdated", "21.03.2014");
         return "tar";
     }
 

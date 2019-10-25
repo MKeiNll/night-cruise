@@ -1,13 +1,16 @@
 <br/>
 <br/>
-<div class="time-container">
-    <div class="time-created">Date created:
-        <div class="time">21.08.2015<img title="Created less than a year ago" src="time_year.svg" width="22"
-                                         height="22"></div>
+<div th:classappend="${created == null || updated == null} ? time-container-small : time-container">
+    <div th:if="${created != null}" class="time-created"
+         th:classappend="${updated != null} ? time-created-border : null">Date created:
+        <div class="time" th:inline="text">[[${created}]]<img title="Created less than a year ago" src="time_year.svg"
+                                                              width="22"
+                                                              height="22"></div>
     </div>
-    <div class="time-updated">Date updated:
-        <div class="time">22.01.2020<img title="Updated less than 2 years ago" src="time_2-years.svg" width="22"
-                                         height="22">
+    <div th:if="${updated != null}" class="time-updated">Date updated:
+        <div class="time" th:inline="text">[[${updated}]]<img title="Updated less than 2 years ago"
+                                                              src="time_2-years.svg" width="22"
+                                                              height="22">
         </div>
     </div>
 </div>
