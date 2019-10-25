@@ -17,7 +17,7 @@
                  width="22"
                  height="22"
                  th:if="${timePassed >= 604800000l && timePassed < 2592000000l}">
-            <img title="Created less than 6 months ago" src="time_half-a-year.svg"
+            <img title="Created less than 6 months ago" src="time_6-months.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 2592000000l && timePassed < 15778476000l}">
@@ -28,7 +28,7 @@
             <img title="Created less than 2 years ago" src="time_2-years.svg"
                  width="22"
                  height="22"
-                 th:if="${timePassed >= 15778476000l && timePassed < 63113904000l}">
+                 th:if="${timePassed >= 31556952000l && timePassed < 63113904000l}">
             <img title="Created less than 5 years ago" src="time_5-years.svg"
                  width="22"
                  height="22"
@@ -57,7 +57,7 @@
                  width="22"
                  height="22"
                  th:if="${timePassed >= 604800000l && timePassed < 2592000000l}">
-            <img title="Updated less than 6 months ago" src="time_half-a-year.svg"
+            <img title="Updated less than 6 months ago" src="time_6-months.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 2592000000l && timePassed < 15778476000l}">
@@ -68,7 +68,7 @@
             <img title="Updated less than 2 years ago" src="time_2-years.svg"
                  width="22"
                  height="22"
-                 th:if="${timePassed >= 15778476000l && timePassed < 63113904000l}">
+                 th:if="${timePassed >= 31556952000l && timePassed < 63113904000l}">
             <img title="Updated less than 5 years ago" src="time_5-years.svg"
                  width="22"
                  height="22"
