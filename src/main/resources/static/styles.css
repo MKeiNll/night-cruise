@@ -67,21 +67,6 @@ a:hover {
   color: gray;
 }
 
-p {
-  background-color: rgba(192, 192, 192, 0.25);
-  padding-left: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 18px;
-  line-height: 24px;
-  max-width: 900px;
-  text-align: justify;
-  margin-left: -8px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 0;
-}
-
 h2 {
   width: 900px;
   margin-top: 50px;
@@ -90,12 +75,6 @@ h2 {
   font-size: 24px;
   color: black;
   font-style: italic;
-}
-
-.paragraph-container {
-  width: 900px;
-  display: flex;
-  align-items: flex-start;
 }
 
 #menu-container {
@@ -294,4 +273,80 @@ h2 {
 
 #lang-current:hover {
   color: black;
+}
+
+.text-container {
+  width: 900px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.text {
+  background-color: rgba(192, 192, 192, 0.25);
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 18px;
+  line-height: 24px;
+  max-width: 900px;
+  text-align: justify;
+  margin-left: -8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(192, 192, 192, 0.3);
+  width: 345px;
+  height: 68px;
+  font-style: italic;
+  padding-right: 5px;
+  position: relative;
+  right: 5px;
+}
+
+.time-container-small {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(192, 192, 192, 0.3);
+  width: 345px;
+  height: 34px;
+  font-style: italic;
+  padding-right: 5px;
+  position: relative;
+  right: 5px;
+}
+
+.time-created {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  width: 340px;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+.time-updated {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  width: 340px;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 135px;
+  margin-right: 5px;
 }
