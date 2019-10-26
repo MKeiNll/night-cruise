@@ -3,9 +3,11 @@
 <head th:replace="fragments/header"></head>
 <body>
 <div th:replace="fragments/menu"></div>
-<h2 class="title">
-    SporeX
-</h2>
+<div class="title-container">
+    <h2>
+        SporeX
+    </h2>
+</div>
 <div class="text-container">
     <div class="text">
         This game is really cool.
@@ -14,9 +16,11 @@
         <div th:replace="fragments/time(created=${sporexCreated}, updated=${sporexUpdated})"></div>
     </div>
 </div>
-<h2 class="title">
-    Marble Blast Fusion
-</h2>
+<div class="title-container">
+    <h2>
+        Marble Blast Fusion
+    </h2>
+</div>
 <div class="text-container">
     <div class="text">
         Another coolio game super fun super extra mega fun extra mega super.
@@ -24,9 +28,14 @@
         <div th:replace="fragments/time(created=${mbfCreated}, updated=${mbfUpdated})"></div>
     </div>
 </div>
-<h2 class="title">
-    Renade
-</h2>
+<div class="title-container">
+    <div class="coming-soon-title-container">
+        <h2>
+            Renade
+        </h2>
+        <div class="coming-soon">COMING SOON</div>
+    </div>
+</div>
 <div class="text-container">
     <div class="text">
         Work in progress. This will be the biggest and coolest and

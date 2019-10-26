@@ -70,13 +70,16 @@ a:hover {
 }
 
 h2 {
-  width: 900px;
   margin-top: 50px;
   margin-bottom: 18px;
   padding-left: 18px;
   font-size: 24px;
   color: black;
   font-style: italic;
+}
+
+.title-container {
+  width: 900px;
 }
 
 #menu-container {
@@ -354,4 +357,33 @@ h2 {
   align-items: center;
   width: 135px;
   margin-right: 5px;
+}
+
+.coming-soon {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 9px;
+  border: 2px solid gray;
+  border-radius: 3px;
+  background-color: LightGray;
+  width: fit-content;
+}
+
+.coming-soon-menu-item-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.coming-soon-menu-item-container .menu-item {
+  margin-right: 0px;
+}
+
+.coming-soon-title-container h2 {
+  margin-bottom: 0px;
+}
+
+.coming-soon-title-container .coming-soon {
+  margin-bottom: 18px;
 }
