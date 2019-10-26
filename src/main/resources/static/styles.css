@@ -412,3 +412,7 @@ h2 {
 .coming-soon-title-container .coming-soon {
   margin-bottom: 15px;
 }
+
+#theme-button-coming-soon {
+  font-style: italic;
+}

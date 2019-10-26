@@ -16,7 +16,7 @@ public class MyController {
 
     public static final String ABOUT_MENU_LABEL = "About";
     public static final String DEV_MENU_LABEL = "Developments";
-    public static final String TAR_MENU_LABEL = "Tar";
+    public static final String TAR_MENU_LABEL = "TAR";
     public static final String SUPER_3_MENU_LABEL = "SUPER_3";
     public static final String HOME_MENU_LABEL = "Home";
     public static final String THEME_MENU_LABEL = "Theme";

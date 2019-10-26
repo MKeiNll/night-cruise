@@ -6,16 +6,23 @@
                    class="menu-item"
                    th:text="${item.toUpperCase()}" th:href="@{./} + ${item.toLowerCase()}"
                    th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null"></a>
-                <div th:if="${item.equals('Theme')}" id="theme-button" class="menu-item">
-                    <div id="theme-option-container">
-                        <div id="theme-options">
-                            <a class="theme-option">GOTHIC GOSHA</a>
-                            <a class="theme-option">SALINE</a>
-                            <a class="theme-option" id="theme-current">MKEIN2</a>
-                            <a class="theme-option">RANDOM</a>
-                        </div>
-                    </div>
-                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>
+                <!--                <div th:if="${item.equals('Theme')}" id="theme-button" class="menu-item">-->
+                <!--                    <div id="theme-option-container">-->
+                <!--                        <div id="theme-options">-->
+                <!--                            <a class="theme-option">GOTHIC GOSHA</a>-->
+                <!--                            <a class="theme-option">SALINE</a>-->
+                <!--                            <a class="theme-option" id="theme-current">MKEIN2</a>-->
+                <!--                            <a class="theme-option">RANDOM</a>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>-->
+                <!--                </div>-->
+                <div th:if="${item.equals('Theme')}" class="coming-soon-menu-item-container">
+                    <a class="menu-item" id="theme-button-coming-soon"
+                       th:text="${item.toUpperCase() + '&nbsp;'}" th:href="@{./} + ${item.toLowerCase()}"
+                       th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
+                    </a>
+                    <div class="coming-soon">COMING SOON</div>
                 </div>
                 <div th:if="${item.equals('Language')}" id="lang-button" class="menu-item">
                     <div id="lang-option-container">
