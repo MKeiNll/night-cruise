@@ -379,6 +379,7 @@ h2 {
 }
 
 .coming-soon-menu-item-container .menu-item {
+  cursor: not-allowed;
   color: rgb(160, 160, 160);
   margin-right: 0px;
   margin-bottom: 3px;

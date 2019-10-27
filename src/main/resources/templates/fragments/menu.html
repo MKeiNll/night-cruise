@@ -19,7 +19,7 @@
                 <!--                </div>-->
                 <div th:if="${item.equals('Theme')}" class="coming-soon-menu-item-container">
                     <a class="menu-item"
-                       th:text="${item.toUpperCase()}" th:href="@{./} + ${item.toLowerCase()}"
+                       th:text="${item.toUpperCase()}" href="#"
                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
                     <div class="coming-soon">COMING SOON&nbsp;</div>
@@ -36,14 +36,14 @@
                 </div>
                 <div th:if="${item.equals('SUPER_3')}" class="coming-soon-menu-item-container">
                     <a class="menu-item"
-                       th:text="${item.toUpperCase()}" th:href="@{./} + ${item.toLowerCase()}"
+                       th:text="${item.toUpperCase()}" href="#"
                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
                     <div class="coming-soon">COMING SOON&nbsp;</div>
                 </div>
                 <div th:if="${item.equals('TAR')}" class="coming-soon-menu-item-container">
                     <a class="menu-item"
-                       th:text="${item.toUpperCase()}" th:href="@{./} + ${item.toLowerCase()}"
+                       th:text="${item.toUpperCase()}" href="#"
                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
                     <div class="coming-soon">COMING SOON&nbsp;</div>
