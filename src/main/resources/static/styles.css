@@ -434,3 +434,8 @@ h2 {
     rgba(128, 128, 128, 0.3) 20px
   );
 }
+
+.subtitle {
+  display: inline-block;
+  margin-bottom: 5px;
+}
