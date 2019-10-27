@@ -66,7 +66,7 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: rgb(128, 128, 128);
 }
 
 h2 {
@@ -139,13 +139,13 @@ h2 {
 
 #theme-link {
   font-style: italic;
-  background-color: rgba(192, 192, 255, 0.3);
-  color: DarkGray;
+  background-color: rgba(192, 192, 255, 0.5);
+  color: color: rgb(64, 64, 64);;
 }
 
 #theme-link:hover {
-  background-color: rgba(192, 192, 255, 0.15);
-  color: LightGray;
+  background-color: rgba(192, 192, 255, 0.3);
+  color: rgb(211, 211, 211);
   cursor: pointer;
 }
 
@@ -161,7 +161,7 @@ h2 {
   height: 144px;
   width: 155px;
   top: 9px;
-  border: 3px solid rgba(192, 192, 255, 0.3);
+  border: 3px solid rgba(192, 192, 255, 0.5);
   background-color: rgb(235, 235, 235);
 }
 
@@ -181,8 +181,8 @@ h2 {
 }
 
 #theme-option-container:hover ~ #theme-link {
-  background-color: rgba(192, 192, 255, 0.15);
-  color: LightGray;
+  background-color: rgba(192, 192, 255, 0.3);
+  color: rgb(211, 211, 211);
 }
 
 .theme-option {
@@ -194,7 +194,7 @@ h2 {
 
 .theme-option:hover:not(#theme-current) {
   cursor: pointer;
-  background-color: LightGray;
+  background-color: rgb(211, 211, 211);
   color: white;
 }
 
@@ -205,13 +205,13 @@ h2 {
 
 #lang-link {
   font-style: italic;
-  background-color: rgba(255, 192, 192, 0.3);
-  color: DarkGray;
+  background-color: rgba(255, 192, 192, 0.5);
+  color: rgb(128, 128, 128);;
 }
 
 #lang-link:hover {
-  background-color: rgba(255, 192, 192, 0.15);
-  color: LightGray;
+  background-color: rgba(255, 192, 192, 0.3);
+  color: rgb(211, 211, 211);
   cursor: pointer;
 }
 
@@ -227,7 +227,7 @@ h2 {
   height: 108px;
   width: 155px;
   top: 9px;
-  border: 3px solid rgba(255, 192, 192, 0.3);
+  border: 3px solid rgba(255, 192, 192, 0.5);
   background-color: rgb(235, 235, 235);
 }
 
@@ -247,8 +247,8 @@ h2 {
 }
 
 #lang-option-container:hover ~ #lang-link {
-  background-color: rgba(255, 192, 192, 0.15);
-  color: LightGray;
+  background-color: rgba(255, 192, 192, 0.3);
+  color: rgb(211, 211, 211);
 }
 
 .lang-option {
@@ -260,16 +260,16 @@ h2 {
 
 .lang-option:hover:not(#lang-current) {
   cursor: pointer;
-  background-color: LightGray;
+  background-color: rgb(211, 211, 211);
   color: white;
 }
 
 #theme-current {
-  background-color: rgba(192, 192, 255, 0.3);
+  background-color: rgba(192, 192, 255, 0.5);
 }
 
 #lang-current {
-  background-color: rgba(255, 192, 192, 0.3);
+  background-color: rgba(255, 192, 192, 0.5);
 }
 
 #theme-current:hover {
@@ -363,10 +363,12 @@ h2 {
   font-weight: bold;
   font-size: 9px;
   line-height: 9px;
-  border: 2px solid gray;
-  border-radius: 3px;
-  background-color: LightGray;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 5px;
   width: fit-content;
+  background-color: rgba(192, 192, 192, 0.5);
+  padding: 1px;
+  font-style: italic;
 }
 
 .coming-soon-menu-item-container {
@@ -377,6 +379,7 @@ h2 {
 }
 
 .coming-soon-menu-item-container .menu-item {
+  color: rgb(160, 160, 160);
   margin-right: 0px;
   margin-bottom: 3px;
   padding: 3px;
@@ -398,8 +401,9 @@ h2 {
 }
 
 .coming-soon-title-container h2 {
+  color: rgb(160, 160, 160);
   margin-bottom: 3px;
-  padding: 3px;
+  padding: 5px;
   background: repeating-linear-gradient(
     45deg,
     rgba(192, 192, 192, 0.3),
@@ -411,8 +415,4 @@ h2 {
 
 .coming-soon-title-container .coming-soon {
   margin-bottom: 15px;
-}
-
-#theme-button-coming-soon {
-  font-style: italic;
 }
