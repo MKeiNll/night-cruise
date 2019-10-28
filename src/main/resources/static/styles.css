@@ -118,12 +118,12 @@ h2 {
 }
 
 @supports (-moz-background-clip: text) {
-#logo {
-  background-size: 30%;
-  background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
-  background-position: center;
-  -moz-background-clip: text;
-}
+  #logo {
+    background-size: 30%;
+    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-position: center;
+    -moz-background-clip: text;
+  }
 }
 
 @supports (-webkit-background-clip: text) {
