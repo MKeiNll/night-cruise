@@ -43,14 +43,12 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 500px;
-
+  justify-content: center;
+  margin-left: 250px;
   color: rgb(64, 64, 64);
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
   background-repeat: repeat;
   overflow-x: hidden;
-
   padding-bottom: 120px;
 }
 
@@ -80,11 +78,6 @@ h2 {
 
 .title-container {
   width: 900px;
-}
-
-ul {
-  margin: 0px;
-  padding-left: 20px;
 }
 
 #menu-container {
@@ -163,7 +156,7 @@ ul {
   color: transparent;
   filter: saturate(500%);
   text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
-  margin-left: 150px;
+  margin-left: 250px;
 }
 
 #theme-button {
@@ -327,7 +320,7 @@ ul {
   padding-bottom: 18px;
   padding-right: 18px;
   line-height: 24px;
-  max-width: 900px;
+  width: 900px;
   text-align: justify;
   margin-left: -8px;
   margin-top: 0;

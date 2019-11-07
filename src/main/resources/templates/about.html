@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head th:replace="fragments/header"></head>
-
 <body>
     <div th:replace="fragments/menu"></div>
     <div class="title-container">
-        <h2>
-            This Website
-        </h2>
+      <h2>
+        This Website
+      </h2>
     </div>
     <div class="text-container">
-        <div class="text">
-            <b class="subtitle">Concept</b><br />
-            A sand castle.<br /><br />
-            <b class="subtitle">Credits</b><br />
-            <ul>
-                <li>Logo gif by <b>Emilie Sheenan</b> from www.giphy.com</li>
-                <li>Logo stripes from www.dlpng.com</li>
-                <li>Background image from www.toptal.com</li>
-                <li>Moon phase icons by <b>Freepik</b> from www.flaticon.com</li>
-                <li>Favicon from www.favicon.io</li>
-            </ul>
-            <br />
-            <b class="subtitle">Time</b><br />
-            The icons near the dates indicate the time elapsed since the creation/renewal and range from an empty circle
-            meaning creation/renewal has happened today to a black circle that meaning creation/renewal has happened
-            more
-            than 10
-            years ago.
-            <br /><br />
-            <i>Source code can be found on GitHub.</i>
-            <div th:replace="fragments/time(created=${aboutCreated}, updated=${aboutUpdated})"></div>
-        </div>
+      <div class="text">
+        <b class="subtitle">Concept</b><br/>
+        A sand castle.<br/><br/>
+        <b class="subtitle">Credits</b><br/>
+        <ul>
+          <li>Logo gif by <b>Emilie Sheenan</b> from www.giphy.com</li>
+          <li>Logo stripes from www.dlpng.com</li>
+          <li>Background image from www.toptal.com</li>
+          <li>Moon phase icons by <b>Freepik</b> from www.flaticon.com</li>
+          <li>Favicon from www.favicon.io</li>
+        </ul>
+        <br/>
+        <b class="subtitle">Time</b><br/>
+        The icons near the dates indicate the time elapsed since the
+        creation/renewal and range from an empty circle meaning creation/renewal
+        has happened today to a black circle that meaning creation/renewal has
+        happened more than 10 years ago.
+        <br/><br/>
+        <i>Source code can be found on GitHub.</i>
+        <div
+                th:replace="fragments/time(created=${aboutCreated}, updated=${aboutUpdated})"
+        ></div>
+      </div>
     </div>
     <div class="title-container">
-        <h2>
-            CV
-        </h2>
+      <h2>
+        CV
+      </h2>
     </div>
     <div class="text-container">
-        <div class="text">
-            <b>Name:</b> Lev Girich<br />
-            <b>Languages:</b> Russian<br />
-            <b>Technologies:</b> Spring boot<br />
-            <b>Work experience:</b> 10 years at Google
-            <div th:replace="fragments/time(updated=${cvUpdated})"></div>
-        </div>
+      <div class="text">
+        <b>Name:</b> Lev Girich<br/>
+        <b>Languages:</b> Russian<br/>
+        <b>Technologies:</b> Spring boot<br/>
+        <b>Work experience:</b> 10 years at Google
+        <div th:replace="fragments/time(updated=${cvUpdated})"></div>
+      </div>
     </div>
 </body>
-
 </html>
