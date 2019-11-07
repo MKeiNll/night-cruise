@@ -58,15 +58,6 @@ html {
   line-height: 18px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: rgb(128, 128, 128);
-}
-
 h2 {
   margin-top: 50px;
   margin-bottom: 18px;
@@ -74,6 +65,12 @@ h2 {
   font-size: 24px;
   color: black;
   font-style: italic;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0px;
+  padding-left: 20px;
 }
 
 .title-container {
@@ -87,6 +84,15 @@ h2 {
   margin-top: 70px;
   font-weight: normal;
   position: relative;
+}
+
+#menu-container a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu-container a:hover {
+  color: rgb(128, 128, 128);
 }
 
 .menu-item {
@@ -233,7 +239,7 @@ h2 {
 #lang-link {
   font-style: italic;
   background-color: rgba(255, 192, 192, 0.5);
-  color: rgb(128, 128, 128);
+  color: rgb(128, 96, 96) !important;
 }
 
 #lang-link:hover {
@@ -406,7 +412,7 @@ h2 {
 
 .coming-soon-menu-item-container .menu-item {
   cursor: not-allowed;
-  color: rgb(160, 160, 160);
+  color: rgb(128, 128, 128) !important;
   margin-right: 0px;
   margin-bottom: 3px;
   padding: 3px;
@@ -427,7 +433,7 @@ h2 {
 }
 
 .coming-soon-title-container h2 {
-  color: rgb(160, 160, 160);
+  color: rgb(128, 128, 128);
   margin-bottom: 3px;
   padding: 5px;
   background: repeating-linear-gradient(

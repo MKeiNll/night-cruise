@@ -2,50 +2,56 @@
 <html lang="en">
 <head th:replace="fragments/header"></head>
 <body>
-    <div th:replace="fragments/menu"></div>
-    <div class="title-container">
-      <h2>
+<div th:replace="fragments/menu"></div>
+<div class="title-container">
+    <h2>
         This Website
-      </h2>
-    </div>
-    <div class="text-container">
-      <div class="text">
+    </h2>
+</div>
+<div class="text-container">
+    <div class="text">
         <b class="subtitle">Concept</b><br/>
-        A sand castle.<br/><br/>
-        <b class="subtitle">Credits</b><br/>
-        <ul>
-          <li>Logo gif by <b>Emilie Sheenan</b> from www.giphy.com</li>
-          <li>Logo stripes from www.dlpng.com</li>
-          <li>Background image from www.toptal.com</li>
-          <li>Moon phase icons by <b>Freepik</b> from www.flaticon.com</li>
-          <li>Favicon from www.favicon.io</li>
-        </ul>
+        A sand castle.<br/>
+        A humble attempt of perpetuating myself in a night cruise.<br/>
+        A humble attempt of putting myself together.<br/>
+        A card house.<br/>
         <br/>
         <b class="subtitle">Time</b><br/>
-        The icons near the dates indicate the time elapsed since the
-        creation/renewal and range from an empty circle meaning creation/renewal
-        has happened today to a black circle that meaning creation/renewal has
-        happened more than 10 years ago.
-        <br/><br/>
-        <i>Source code can be found on GitHub.</i>
+        All time entries have icons.<br/>
+        These icons indicate the time that has passed.<br/>
+        They range from an empty circle meaning something has happened today to a black circle meaning
+        something has happened more than 10 years ago.
+        <br/>
+        <br/>
+        <b class="subtitle">Credits</b><br/>
+        Logo animation made by Emilie Sheenan from <a
+            target="_blank" href="https://giphy.com/gifs/3d-retro-render-3M9E7L03hNYnfrK6dM">www.giphy.com</a>
+        <br/>
+        Background image made by Arno Gregorian from <a
+            target="_blank" href="https://www.toptal.com/designers/subtlepatterns/grid-me/">www.toptal.com</a>
+        <br/>
+        Moon phase icons made by <a target="_blank" href="https://www.freepik.com/">Freepik</a> from <a
+            target="_blank" href="https://www.flaticon.com/packs/moon-phase-3">www.flaticon.com</a><br/>
+        <br/>
+        <i>Source code of this website can be found on GitHub.</i>
         <div
                 th:replace="fragments/time(created=${aboutCreated}, updated=${aboutUpdated})"
         ></div>
-      </div>
     </div>
-    <div class="title-container">
-      <h2>
+</div>
+<div class="title-container">
+    <h2>
         CV
-      </h2>
-    </div>
-    <div class="text-container">
-      <div class="text">
+    </h2>
+</div>
+<div class="text-container">
+    <div class="text">
         <b>Name:</b> Lev Girich<br/>
         <b>Languages:</b> Russian<br/>
         <b>Technologies:</b> Spring boot<br/>
         <b>Work experience:</b> 10 years at Google
         <div th:replace="fragments/time(updated=${cvUpdated})"></div>
-      </div>
     </div>
+</div>
 </body>
 </html>
