@@ -35,9 +35,9 @@ public class MyController {
     public String getAbout(Model model) {
         model.addAttribute("menu", new String[][]{{ABOUT_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "about");
-        model.addAttribute("aboutUpdated", "25.09.2019");
-        model.addAttribute("aboutCreated", "26.09.2019");
-        model.addAttribute("cvUpdated", "21.08.2015");
+        model.addAttribute("websiteCreated", "26.09.2019"); // TODO
+        model.addAttribute("contactsUpdated", "26.09.2019"); // TODO
+        model.addAttribute("cvUpdated", "21.08.2015"); // TODO
         return "about";
     }
 

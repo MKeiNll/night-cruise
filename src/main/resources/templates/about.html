@@ -34,8 +34,22 @@
         <br/>
         <i>The source code of this website can be found on GitHub.</i>
         <div
-                th:replace="fragments/time(created=${aboutCreated}, updated=${aboutUpdated})"
+                th:replace="fragments/time(created=${websiteCreated})"
         ></div>
+    </div>
+</div>
+<div class="title-container">
+    <h2>
+        Contacts
+    </h2>
+</div>
+<div class="text-container">
+    <div class="text">
+        Vkontakte<br/>
+        Viber<br/>
+        Telegram<br/>
+        Email
+        <div th:replace="fragments/time(updated=${contactsUpdated})"></div>
     </div>
 </div>
 <div class="title-container">
@@ -45,10 +59,13 @@
 </div>
 <div class="text-container">
     <div class="text">
-        <b>Name:</b> Lev Girich<br/>
-        <b>Languages:</b> Russian<br/>
-        <b>Technologies:</b> Spring boot<br/>
-        <b>Work experience:</b> 10 years at Google
+        <button>Download as pdf</button>
+        <br/>
+        <button>Download as txt</button>
+        <br/>
+        <button>Download as jpeg</button>
+        <br/>
+        Online preview
         <div th:replace="fragments/time(updated=${cvUpdated})"></div>
     </div>
 </div>
