@@ -66,10 +66,8 @@ h2 {
   color: black;
 }
 
-ul {
-  list-style-type: circle;
-  margin: 0px;
-  padding-left: 20px;
+a {
+  color: rgb(128, 128, 192);
 }
 
 .title-container {
@@ -445,4 +443,14 @@ ul {
 .subtitle {
   display: inline-block;
   margin-bottom: 5px;
+}
+
+#contacts {
+  line-height: 36px;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 110px;
+  font-weight: bold;
 }
