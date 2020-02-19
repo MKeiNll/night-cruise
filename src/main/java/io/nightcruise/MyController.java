@@ -22,7 +22,7 @@ public class MyController {
     public static final String THEME_MENU_LABEL = "Theme";
     public static final String LANGUAGE_MENU_LABEL = "Language";
 
-    public static final String[] MENU_LABELS = {ABOUT_MENU_LABEL, DEV_MENU_LABEL, SUPER_3_MENU_LABEL, TAR_MENU_LABEL, THEME_MENU_LABEL, LANGUAGE_MENU_LABEL};
+    public static final String[] MENU_LABELS = {DEV_MENU_LABEL, ABOUT_MENU_LABEL, THEME_MENU_LABEL, LANGUAGE_MENU_LABEL};
 
     @GetMapping("/")
     public String getHome(Model model) {
