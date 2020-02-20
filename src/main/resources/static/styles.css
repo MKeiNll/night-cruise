@@ -288,7 +288,7 @@ a {
   width: 137px;
 }
 
-.lang-option:hover:not(#lang-current) {
+.lang-option:hover:not(.lang-current) {
   cursor: pointer;
   background-color: rgb(211, 211, 211);
   color: white;
@@ -298,7 +298,7 @@ a {
   background-color: rgba(192, 192, 255, 0.5);
 }
 
-#lang-current {
+.lang-current {
   background-color: rgba(255, 192, 192, 0.5);
 }
 
@@ -306,7 +306,7 @@ a {
   color: black;
 }
 
-#lang-current:hover {
+.lang-current:hover {
   color: black;
 }
 

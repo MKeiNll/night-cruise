@@ -25,9 +25,12 @@
                 <div th:if="${item.equals('Language')}" id="lang-button" class="menu-item">
                     <div id="lang-option-container">
                         <div id="lang-options">
-                            <a class="lang-option" data-locale="en" id="lang-current" th:text="#{lang.en}"></a>
-                            <a class="lang-option" data-locale="ee" th:text="#{lang.ee}"></a>
-                            <a class="lang-option" data-locale="ru" th:text="#{lang.ru}"></a>
+                            <a class="lang-option" data-locale="en" th:text="#{lang.en}"
+                               th:classappend="__${#locale}__ == 'en' ? 'lang-current' : null"></a>
+                            <a class="lang-option" data-locale="ru" th:text="#{lang.ru}"
+                               th:classappend="__${#locale}__ == 'ru' ? 'lang-current' : null"></a>
+                            <a class="lang-option" data-locale="ee" th:text="#{lang.ee}"
+                               th:classappend="__${#locale}__ == 'ee' ? 'lang-current' : null"></a>
                         </div>
                     </div>
                     <a th:text="${item.toUpperCase() + '&nbsp;'}" id="lang-link"></a>
