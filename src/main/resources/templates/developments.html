@@ -9,23 +9,18 @@
     </h2>
 </div>
 <div class="text-container">
-    <div class="text">
-        A top down shooter online multiplayer game.
+    <div class="text" th:inline="text">
+        [[#{developments.sx.p1}]]
         <br><br>
-        Based on a Box2D physics engine featuring collision detection,
-        movable objects and real world-like armor/penetration system where reduced armor is equal to the armor
-        multiplied by the cosine of the bullet angle
-        to armor normal.
+        [[#{developments.sx.p2}]]
         <br><br>
-        Includes feature-rich interface, 15 different tanks (each with its own unique hull & turret armor scheme), 4
-        playable maps & much more.
+        [[#{developments.sx.p3}]]
         <br><br>
-        Features fully working online multiplayer with lobbies, matchmaking & leaderboard. Networking is based on
-        KryoNet and features full server-side physic calculations, with client-side only rendering received values.
+        [[#{developments.sx.p4}]]
         <br><br>
-        The JRE is packed within the launcher, therefore no Java installation is needed in order to play.
+        [[#{developments.sx.p5}]]
         <br><br>
-        More info - <a href="https://sporex.monster" target="_blank">sporex.monster</a>
+        [[#{developments.sx.p6}]] <a href="https://sporex.monster" target="_blank">sporex.monster</a>
         <div
                 th:replace="fragments/time(created=${sporexCreated}, updated=${sporexUpdated})"
         ></div>
@@ -36,7 +31,7 @@
         <h2>
             Marble Blast FUSION
         </h2>
-        <div class="coming-soon">COMING SOON&nbsp;</div>
+        <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
     </div>
 </div>
 <div class="title-container">
@@ -44,7 +39,7 @@
         <h2>
             Tomb
         </h2>
-        <div class="coming-soon">COMING SOON&nbsp;</div>
+        <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
     </div>
 </div>
 <div class="title-container">
@@ -52,7 +47,7 @@
         <h2>
             Spiral Arms
         </h2>
-        <div class="coming-soon">COMING SOON&nbsp;</div>
+        <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
     </div>
 </div>
 </body>

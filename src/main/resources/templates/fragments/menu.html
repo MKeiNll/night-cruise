@@ -39,13 +39,13 @@
                     <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
                         th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
-                    <div class="coming-soon">COMING SOON&nbsp;</div>
+                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
                 </div>
                 <div th:if="${item.equals('TAR')}" class="coming-soon-menu-item-container">
                     <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
                         th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
-                    <div class="coming-soon">COMING SOON&nbsp;</div>
+                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
                 </div>
             </th:block>
         </div>

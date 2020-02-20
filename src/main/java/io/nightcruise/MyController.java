@@ -28,7 +28,6 @@ public class MyController {
 
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
-        model.addAttribute("menu", new String[][]{{HOME_PAGE_TITLE}, MENU_LABELS});
         model.addAttribute("current", "home");
         return "home";
     }

@@ -4,41 +4,38 @@
 <body>
 <div th:replace="fragments/menu"></div>
 <div class="title-container">
-    <h2>
-        This Website
+    <h2 th:text="#{about.website.title}">
     </h2>
 </div>
 <div class="text-container">
-    <div class="text">
-        <b class="subtitle">Concept</b><br/>
-        A cloud of gas and other matter surrounding and captured by the gravitational field of a large diffuse
-        astronomical object, such as a galaxy or cluster of galaxies.
+    <div class="text" th:inline="text">
+        <b class="subtitle" th:text="#{about.website.concept.title}"></b><br/>
+        [[#{about.website.concept.text}]]
         <br/>
         <br/>
-        <b class="subtitle">Time</b><br/>
-        All date entries have icons near them. These icons indicate time spans & range from an empty circle meaning that
-        something has happened today to a black circle meaning that something has happened more than 10 years ago.
+        <b class="subtitle" th:text="#{about.website.time.title}"></b><br/>
+        [[#{about.website.time.text}]]
         <br/>
         <br/>
-        <b class="subtitle">Credits</b><br/>
-        Logo animation made by Emilie Sheenan from <a
-            target="_blank" href="https://giphy.com/gifs/3d-retro-render-3M9E7L03hNYnfrK6dM">www.giphy.com</a>
+        <b class="subtitle" th:text="#{about.website.credits.title}"></b><br/>
+        [[#{about.website.credits.logo1}]] <a
+            target="_blank" href="https://giphy.com/gifs/3d-retro-render-3M9E7L03hNYnfrK6dM">www.giphy.com</a>[[#{about.website.credits.logo2}]]
         <br/>
-        Background image made by Arno Gregorian from <a
-            target="_blank" href="https://www.toptal.com/designers/subtlepatterns/grid-me/">www.toptal.com</a>
+        [[#{about.website.credits.background1}]] <a
+            target="_blank" href="https://www.toptal.com/designers/subtlepatterns/grid-me/">www.toptal.com</a>[[#{about.website.credits.background2}]]
         <br/>
-        Moon phase icons made by <a target="_blank" href="https://www.freepik.com/">Freepik</a> from <a
-            target="_blank" href="https://www.flaticon.com/packs/moon-phase-3">www.flaticon.com</a><br/>
+        [[#{about.website.credits.icons1}]]<a target="_blank" href="https://www.freepik.com/">Freepik</a>
+        [[#{about.website.credits.icons2}]] <a
+            target="_blank" href="https://www.flaticon.com/packs/moon-phase-3">www.flaticon.com</a>[[#{about.website.credits.icons3}]]<br/>
         <br/>
-        <i>The source code of this website can be found on GitHub.</i>
+        <i th:text="#{about.website.opensource}"></i>
         <div
                 th:replace="fragments/time(created=${websiteCreated})"
         ></div>
     </div>
 </div>
 <div class="title-container">
-    <h2>
-        Contacts
+    <h2 th:text="#{about.contacts.title}">
     </h2>
 </div>
 <div class="text-container">
@@ -51,7 +48,7 @@
                                                        href="https://www.linkedin.com/in/levgirich/">www.linkedin.com/in/levgirich</a>
 
         <br/>
-        <span class="contact-label">Email:</span><span>saline@nightcruise.io</span>
+        <span class="contact-label" th:text="#{about.contacts.email}"></span><span>saline@nightcruise.io</span>
     </div>
 </div>
 </body>
