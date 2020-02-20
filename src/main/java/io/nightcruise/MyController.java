@@ -3,6 +3,8 @@ package io.nightcruise;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
@@ -24,7 +26,7 @@ public class MyController {
 
     public static final String[] MENU_LABELS = {DEV_MENU_LABEL, ABOUT_MENU_LABEL, THEME_MENU_LABEL, LANGUAGE_MENU_LABEL};
 
-    @GetMapping("/")
+    @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
         model.addAttribute("menu", new String[][]{{HOME_PAGE_TITLE}, MENU_LABELS});
         model.addAttribute("current", "home");

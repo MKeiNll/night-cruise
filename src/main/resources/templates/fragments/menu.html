@@ -20,14 +20,14 @@
                     <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
                         th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
                     </a>
-                    <div class="coming-soon">COMING SOON&nbsp;</div>
+                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
                 </div>
                 <div th:if="${item.equals('Language')}" id="lang-button" class="menu-item">
                     <div id="lang-option-container">
                         <div id="lang-options">
-                            <a class="lang-option" id="lang-current">ENGLISH</a>
-                            <a class="lang-option">ESTONIAN</a>
-                            <a class="lang-option">RUSSIAN</a>
+                            <a class="lang-option" data-locale="en" id="lang-current" th:text="#{lang.en}"></a>
+                            <a class="lang-option" data-locale="ee" th:text="#{lang.ee}"></a>
+                            <a class="lang-option" data-locale="ru" th:text="#{lang.ru}"></a>
                         </div>
                     </div>
                     <a th:text="${item.toUpperCase() + '&nbsp;'}" id="lang-link"></a>
