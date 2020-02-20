@@ -1,10 +1,10 @@
 <div class="wrap" id="content-area">
     <div id="menu-container">
         <div id="left-menu-container">
-            <th:block th:each="item : ${menu[1]}">
-                <a th:unless="${item.equals('Theme') || item.equals('Language') || item.equals('SUPER_3') || item.equals('TAR')}"
-                    class="menu-item" th:text="${item.toUpperCase()}" th:href="@{./} + ${item.toLowerCase()}"
-                    th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null"></a>
+            <a class="menu-item" th:text="#{menu.developments}" href="./developments"
+               th:classappend="${current.equals('developments')} ? menu-item-selected : null"></a>
+            <a class="menu-item" th:text="#{menu.about}" href="./about"
+               th:classappend="${current.equals('about')} ? menu-item-selected : null"></a>
                 <!--                <div th:if="${item.equals('Theme')}" id="theme-button" class="menu-item">-->
                 <!--                    <div id="theme-option-container">-->
                 <!--                        <div id="theme-options">-->
@@ -16,13 +16,12 @@
                 <!--                    </div>-->
                 <!--                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>-->
                 <!--                </div>-->
-                <div th:if="${item.equals('Theme')}" class="coming-soon-menu-item-container">
-                    <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
-                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
+            <div class="coming-soon-menu-item-container">
+                <a class="menu-item" th:text="#{menu.theme}" href="#">
                     </a>
                     <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
                 </div>
-                <div th:if="${item.equals('Language')}" id="lang-button" class="menu-item">
+            <div id="lang-button" class="menu-item">
                     <div id="lang-option-container">
                         <div id="lang-options">
                             <a class="lang-option" data-locale="en" th:text="#{lang.en}"
@@ -33,22 +32,9 @@
                                th:classappend="__${#locale}__ == 'ee' ? 'lang-current' : null"></a>
                         </div>
                     </div>
-                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="lang-link"></a>
+                <a th:text="#{menu.language} + '&nbsp;'" id="lang-link"></a>
                 </div>
-                <div th:if="${item.equals('SUPER_3')}" class="coming-soon-menu-item-container">
-                    <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
-                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
-                    </a>
-                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
-                </div>
-                <div th:if="${item.equals('TAR')}" class="coming-soon-menu-item-container">
-                    <a class="menu-item" th:text="${item.toUpperCase()}" href="#"
-                        th:classappend="${current.equals(item.toLowerCase())} ? menu-item-selected : null">
-                    </a>
-                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
-                </div>
-            </th:block>
         </div>
-        <a th:if="${menu.length > 2}" th:text="${'< ' + menu[2][0]}" th:href="@{./} + ${menu[2][0].toLowerCase()}"></a>
+        <a th:if="${!current.equals('home')}" th:text="'< ' + #{menu.home}" href="./home"></a>
     </div>
 </div>

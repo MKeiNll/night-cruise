@@ -35,7 +35,6 @@ public class MyController {
 
     @GetMapping("/about")
     public String getAbout(Model model) {
-        model.addAttribute("menu", new String[][]{{ABOUT_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "about");
         model.addAttribute("websiteCreated", "26.09.2019"); // TODO
         model.addAttribute("contactsUpdated", "26.09.2019"); // TODO
@@ -45,7 +44,6 @@ public class MyController {
 
     @GetMapping("/developments")
     public String getDevelopments(Model model) {
-        model.addAttribute("menu", new String[][]{{DEV_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "developments");
         model.addAttribute("sporexUpdated", "21.03.2014");
         model.addAttribute("sporexCreated", "12.12.2008");
@@ -56,7 +54,6 @@ public class MyController {
 
     @GetMapping("/tar")
     public String getTar(Model model) {
-        model.addAttribute("menu", new String[][]{{TAR_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "tar");
         model.addAttribute("towatchedUpdated", "12.12.2008");
         model.addAttribute("toreadUpdated", "21.03.2014");
@@ -68,7 +65,6 @@ public class MyController {
 
     @GetMapping("/super_3")
     public String getSuper3(Model model) {
-        model.addAttribute("menu", new String[][]{{SUPER_3_PAGE_TITLE}, MENU_LABELS, {HOME_MENU_LABEL}});
         model.addAttribute("current", "super_3");
         return "super_3";
     }
