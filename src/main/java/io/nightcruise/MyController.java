@@ -18,15 +18,15 @@ public class MyController {
     @GetMapping("/about")
     public String getAbout(Model model) {
         model.addAttribute("current", "about");
-        model.addAttribute("websiteCreated", "26.09.2019"); // TODO
+        model.addAttribute("websiteCreated", "23.02.2020");
         return "about";
     }
 
     @GetMapping("/developments")
     public String getDevelopments(Model model) {
         model.addAttribute("current", "developments");
-        model.addAttribute("sporexUpdated", "25.03.2000");
-        model.addAttribute("sporexCreated", "25.03.2000");
+        model.addAttribute("sporexUpdated", "28.11.2018");
+        model.addAttribute("sporexCreated", "21.06.2018");
         return "developments";
     }
 
