@@ -456,3 +456,69 @@ a {
   width: 110px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1400px) and (min-width: 951px){
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    color: rgb(64, 64, 64);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+    background-repeat: repeat;
+    overflow-x: hidden;
+    padding-bottom: 120px;
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    color: rgb(64, 64, 64);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+    background-repeat: repeat;
+    overflow-x: hidden;
+    padding-bottom: 120px;
+    width: 100%;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  #menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-right:  5%;
+    margin-top: 70px;
+    font-weight: normal;
+    position: relative;
+  }
+
+  .text-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    background-color: rgba(192, 192, 192, 0.3);
+    padding-left: 5%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right:  5%;
+    line-height: 24px;
+    width: 90%;
+    text-align: justify;
+    margin-left: -8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
