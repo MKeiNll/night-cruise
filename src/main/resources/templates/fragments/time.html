@@ -33,11 +33,11 @@
                  width="22"
                  height="22"
                  th:if="${timePassed >= 63113904000l && timePassed < 157784760000l}">
-            <img title=th:attr="title=#{time.updated.10years}" src="time_10-years.svg"
+            <img th:attr="title=#{time.updated.10years}" src="time_10-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 157784760000l && timePassed < 315569520000l}">
-            <img title=th:attr="title=#{time.updated.10yearsOrMore}" src="time_10-years-more.svg"
+            <img th:attr="title=#{time.updated.10yearsOrMore}" src="time_10-years-more.svg"
                  width="22"
                  height="22" th:if="${timePassed >= 315569520000l}">
         </div>
@@ -77,7 +77,7 @@
                  width="22"
                  height="22"
                  th:if="${timePassed >= 157784760000l && timePassed < 315569520000l}">
-            <img title=th:attr="title=#{time.created.10yearsOrMore}" src="time_10-years-more.svg"
+            <img th:attr="title=#{time.created.10yearsOrMore}" src="time_10-years-more.svg"
                  width="22"
                  height="22" th:if="${timePassed >= 315569520000l}">
         </div>

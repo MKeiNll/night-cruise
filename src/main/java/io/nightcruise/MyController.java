@@ -19,29 +19,20 @@ public class MyController {
     public String getAbout(Model model) {
         model.addAttribute("current", "about");
         model.addAttribute("websiteCreated", "26.09.2019"); // TODO
-        model.addAttribute("contactsUpdated", "26.09.2019"); // TODO
-        model.addAttribute("cvUpdated", "21.08.2015"); // TODO
         return "about";
     }
 
     @GetMapping("/developments")
     public String getDevelopments(Model model) {
         model.addAttribute("current", "developments");
-        model.addAttribute("sporexUpdated", "21.03.2014");
-        model.addAttribute("sporexCreated", "12.12.2008");
-        model.addAttribute("mbfUpdated", "27.10.2019");
-        model.addAttribute("mbfCreated", "25.05.2019");
+        model.addAttribute("sporexUpdated", "25.03.2000");
+        model.addAttribute("sporexCreated", "25.03.2000");
         return "developments";
     }
 
     @GetMapping("/tar")
     public String getTar(Model model) {
         model.addAttribute("current", "tar");
-        model.addAttribute("towatchedUpdated", "12.12.2008");
-        model.addAttribute("toreadUpdated", "21.03.2014");
-        model.addAttribute("toplayedUpdated", "12.12.2008");
-        model.addAttribute("tolearnedUpdated", "21.03.2014");
-        model.addAttribute("xxxtarUpdated", "21.03.2014");
         return "tar";
     }
 
