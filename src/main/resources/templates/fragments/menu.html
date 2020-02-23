@@ -19,7 +19,7 @@
             <div class="coming-soon-menu-item-container">
                 <a class="menu-item" th:text="#{menu.theme}" href="#">
                     </a>
-                    <div class="coming-soon" th:text="#{general.comingSoon} + '&nbsp;'"></div>
+                <div class="coming-soon" th:text="#{general.comingSoon}"></div>
                 </div>
             <div id="lang-button" class="menu-item">
                     <div id="lang-option-container">
@@ -32,7 +32,7 @@
                                th:classappend="__${#locale}__ == 'ee' ? 'lang-current' : null"></a>
                         </div>
                     </div>
-                <a th:text="#{menu.language} + '&nbsp;'" id="lang-link"></a>
+                <a th:text="#{menu.language}" id="lang-link"></a>
                 </div>
         </div>
         <a th:if="${!current.equals('home')}" th:text="'< ' + #{menu.home}" href="./home"></a>

@@ -237,6 +237,7 @@ a {
   font-style: italic;
   background-color: rgba(255, 192, 192, 0.5);
   color: rgb(128, 96, 96) !important;
+  padding-right: 3px;
 }
 
 #lang-link:hover {
@@ -395,6 +396,7 @@ a {
   border-radius: 5px;
   background-color: rgba(192, 192, 192, 0.5);
   padding: 1px;
+  padding-right: 3px;
   font-style: italic;
 }
 
