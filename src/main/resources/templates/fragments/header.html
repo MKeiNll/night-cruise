@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8"/>
-    <title>fix me</title>
+    <title th:text="#{${current} + '.title'}"></title>
     <link
             href="https://fonts.googleapis.com/css?family=Armata&display=swap"
             rel="stylesheet"
@@ -9,16 +9,15 @@
     <link href="./styles.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(".lang-option").click(function () {
-            let selectedLocale = $(this).attr("data-locale");
-            $.post("/", {
-                locale: selectedLocale
-            }, function(data) {
-                location.reload();
+        $(document).ready(function() {
+            $(".lang-option").click(function () {
+                let selectedLocale = $(this).attr("data-locale");
+                $.post("/", {
+                    locale: selectedLocale
+                }, function(data) {
+                    location.reload();
+                });
             });
         });
-    });
-
     </script>
 </head>
