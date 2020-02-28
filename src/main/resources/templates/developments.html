@@ -27,5 +27,31 @@
 <div class="title-container">
     <h2>Marble Blast FUSION</h2>
 </div>
+<div class="text-container">
+    <div class="text" th:inline="text">
+        A 3D platformer game.
+        <br><br>
+        Made on Unity game engine. Runs on both x32 & x64 bit Windows PCs. Inspired by Marble Blast video game series.
+        <br><br>
+        Includes 1 level pack with 7 levels showcasing various game mechanics, such as moving platforms, ice, gems &
+        portals.
+        <br><br>
+        Each level features a unique graphic theme with its own atmosphere - skybox, textures, effects & more.
+        <br><br>
+        Use <b>WASD or arrow keys</b> to move & <b>space key</b> to jump. Look around by holding <b>left mouse
+        button & moving mouse</b>. Zoom in or out with <b>mouse scroll wheel</b>. <b>F1 key</b> to restart level. <b>Esc
+        key</b> to quit.
+        <br><br>
+        <b>NB!</b> There is a known issue with the game - it's speed depends on FPS drastically & game can become very slow on
+        very high frame rates. Therefore, game speed can be adjusted by selecting a different resolution or graphics quality
+        setting. For reference, GTX 1050 Ti & fantastic graphics quality & Full HD resolution setup does produce a very
+        comfortable gaming experience.
+        <br><br>
+        <a href="https://sporex.monster" target="_blank">Download Marble Blast FUSION executable</a>
+        <div
+                th:replace="fragments/time(created=${mbfCreated}, updated=${mbfUpdated})"
+        ></div>
+    </div>
+</div>
 </body>
 </html>
