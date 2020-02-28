@@ -75,6 +75,11 @@ a {
   width: 900px;
 }
 
+#left-menu-container,
+#right-menu-container {
+  display: flex;
+}
+
 #menu-container {
   display: flex;
   justify-content: space-between;
