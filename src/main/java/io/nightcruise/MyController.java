@@ -28,8 +28,8 @@ public class MyController {
         model.addAttribute("current", "developments");
         model.addAttribute("sporexUpdated", "28.11.2018");
         model.addAttribute("sporexCreated", "21.06.2018");
-        model.addAttribute("mbfCreated", "11.13.2016");
-        model.addAttribute("mbfUpdated", "10.02.2002");
+        model.addAttribute("mbfCreated", "21.11.2016");
+        model.addAttribute("mbfUpdated", "05.01.2017");
         return "developments";
     }
 
