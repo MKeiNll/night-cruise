@@ -19,6 +19,7 @@ public class MyController {
     public String getAbout(Model model) {
         model.addAttribute("current", "about");
         model.addAttribute("websiteCreated", "23.02.2020");
+        model.addAttribute("websiteUpdated", "28.02.2020");
         return "about";
     }
 

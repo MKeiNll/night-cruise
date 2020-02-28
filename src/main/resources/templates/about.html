@@ -29,7 +29,7 @@
         <br/>
         <i th:text="#{about.website.opensource}"></i>
         <div
-                th:replace="fragments/time(created=${websiteCreated})"
+                th:replace="fragments/time(created=${websiteCreated}, updated=${websiteUpdated})"
         ></div>
     </div>
 </div>
