@@ -78,6 +78,7 @@ a {
 #left-menu-container,
 #right-menu-container {
   display: flex;
+  padding-top: 10px;
 }
 
 #menu-container {
@@ -87,6 +88,7 @@ a {
   margin-top: 70px;
   font-weight: normal;
   position: relative;
+  flex-wrap: wrap;
 }
 
 #menu-container a {
@@ -232,7 +234,7 @@ a {
 }
 
 #home-button {
-  width: 70px;
+  width: 100px;
   display: inline-block;
 }
 
@@ -242,7 +244,7 @@ a {
 }
 
 .lang-button-home {
-  margin-right: 100px;
+  margin-right: 130px;
 }
 
 #lang-link {
