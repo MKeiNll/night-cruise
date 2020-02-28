@@ -101,10 +101,6 @@ a {
   pointer-events: none;
 }
 
-#side-menu-item {
-  align-self: flex-end;
-}
-
 #background-stripe {
   display: flex;
   flex-direction: column;
@@ -229,9 +225,18 @@ a {
   color: white;
 }
 
+#home-button {
+  width: 70px;
+  display: inline-block;
+}
+
 #lang-button {
   display: inline-block;
   position: relative;
+}
+
+.lang-button-home {
+  margin-right: 100px;
 }
 
 #lang-link {

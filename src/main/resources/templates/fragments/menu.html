@@ -16,25 +16,27 @@
                 <!--                    </div>-->
                 <!--                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>-->
                 <!--                </div>-->
+        </div>
+        <div>
             <div class="coming-soon-menu-item-container">
                 <a class="menu-item" th:text="#{menu.theme}" href="#">
-                    </a>
+                </a>
                 <div class="coming-soon" th:text="#{general.comingSoon}"></div>
-                </div>
-            <div id="lang-button" class="menu-item">
-                    <div id="lang-option-container">
-                        <div id="lang-options">
-                            <a class="lang-option" data-locale="en" th:text="#{lang.en}"
-                               th:classappend="__${#locale}__ == 'en' ? 'lang-current' : null"></a>
-                            <a class="lang-option" data-locale="ru" th:text="#{lang.ru}"
-                               th:classappend="__${#locale}__ == 'ru' ? 'lang-current' : null"></a>
-                            <a class="lang-option" data-locale="ee" th:text="#{lang.ee}"
-                               th:classappend="__${#locale}__ == 'ee' ? 'lang-current' : null"></a>
-                        </div>
+            </div>
+            <div id="lang-button" class="menu-item" th:classappend="${current.equals('home')} ? 'lang-button-home' : null">
+                <div id="lang-option-container">
+                    <div id="lang-options">
+                        <a class="lang-option" data-locale="en" th:text="#{lang.en}"
+                           th:classappend="__${#locale}__ == 'en' ? 'lang-current' : null"></a>
+                        <a class="lang-option" data-locale="ru" th:text="#{lang.ru}"
+                           th:classappend="__${#locale}__ == 'ru' ? 'lang-current' : null"></a>
+                        <a class="lang-option" data-locale="ee" th:text="#{lang.ee}"
+                           th:classappend="__${#locale}__ == 'ee' ? 'lang-current' : null"></a>
                     </div>
-                <a th:text="#{menu.language}" id="lang-link"></a>
                 </div>
+                <a th:text="#{menu.language}" id="lang-link"></a>
+            </div>
+            <a id="home-button" th:if="${!current.equals('home')}" th:text="'< ' + #{menu.home}" href="./"></a>
         </div>
-        <a th:if="${!current.equals('home')}" th:text="'< ' + #{menu.home}" href="./"></a>
     </div>
 </div>
