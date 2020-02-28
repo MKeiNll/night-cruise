@@ -85,7 +85,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 900px;
-  margin-top: 70px;
+  margin-top: 60px;
   font-weight: normal;
   position: relative;
   flex-wrap: wrap;
@@ -102,6 +102,11 @@ a {
 
 .menu-item {
   margin-right: 30px;
+}
+
+#home-button,
+.menu-item:not(#theme) {
+  margin-top: 3px;
 }
 
 .menu-item-selected {
