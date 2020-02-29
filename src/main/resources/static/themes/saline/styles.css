@@ -45,9 +45,14 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 250px;
+  margin-top: 0px;
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 120px;
+
+  background: url(https://cdn.pixabay.com/photo/2015/12/12/17/36/seamless-pattern-1089801_960_720.jpg);
+  background-size: 60%;
+  background-repeat: repeat;
 }
 
 html {
@@ -86,7 +91,8 @@ a {
   position: relative;
   flex-wrap: wrap;
 
-  background-color: #deade0;
+  background-color: rgba(222, 173, 224, 0.55);
+  color: white;
   padding-top: 60px;
   padding-bottom: 30px;
   margin-bottom: -30px;
@@ -98,7 +104,7 @@ a {
 
 #menu-container a {
   text-decoration: none;
-  color: black;
+  color: steelblue;
 }
 
 #menu-container a:hover {
@@ -145,6 +151,8 @@ a {
   color: hotpink;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 #theme-button {
@@ -484,9 +492,18 @@ a {
     width: 90%;
     padding-left: 5%;
     padding-right:  5%;
-    margin-top: 70px;
     font-weight: normal;
     position: relative;
+
+    background-color: rgba(222, 173, 224, 0.8);
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+    padding-right: 100%;
+    margin-right: -100%;
+    padding-left: 100%;
+    margin-left: -100%;
   }
 
   .text-container {
