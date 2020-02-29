@@ -5,23 +5,17 @@
                th:classappend="${current.equals('developments')} ? menu-item-selected : null"></a>
             <a class="menu-item" th:text="#{menu.about}" href="./about"
                th:classappend="${current.equals('about')} ? menu-item-selected : null"></a>
-                <!--                <div th:if="${item.equals('Theme')}" id="theme-button" class="menu-item">-->
-                <!--                    <div id="theme-option-container">-->
-                <!--                        <div id="theme-options">-->
-                <!--                            <a class="theme-option">GOTHIC GOSHA</a>-->
-                <!--                            <a class="theme-option">SALINE</a>-->
-                <!--                            <a class="theme-option" id="theme-current">MKEIN2</a>-->
-                <!--                            <a class="theme-option">RANDOM</a>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                    <a th:text="${item.toUpperCase() + '&nbsp;'}" id="theme-link"></a>-->
-                <!--                </div>-->
         </div>
         <div id="right-menu-container">
-            <div class="coming-soon-menu-item-container">
-                <a class="menu-item" id="theme" th:text="#{menu.theme}" href="#">
-                </a>
-                <div class="coming-soon" th:text="#{general.comingSoon}"></div>
+            <div id="theme-button" class="menu-item">
+                <div id="theme-option-container">
+                    <div id="theme-options">
+                        <a class="theme-option">SALINE</a>
+                        <a class="theme-option" id="theme-current">MKEIN2</a>
+                        <a class="theme-option">RANDOM</a>
+                    </div>
+                </div>
+                <a th:text="#{menu.theme}" id="theme-link"></a>
             </div>
             <div id="lang-button" class="menu-item" th:classappend="${current.equals('home')} ? 'lang-button-home' : null">
                 <div id="lang-option-container">
