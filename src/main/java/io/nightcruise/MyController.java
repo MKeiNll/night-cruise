@@ -6,12 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
 @Controller
 public class MyController {
+    public static final String THEME_MKEIN2 = "MKeiN2";
+    public static final String THEME_SALINE = "Saline";
+
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
         model.addAttribute("current", "home");
+        model.addAttribute("theme", THEME_MKEIN2);
         return "home";
     }
 
