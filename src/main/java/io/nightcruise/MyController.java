@@ -14,7 +14,7 @@ public class MyController {
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
         model.addAttribute("current", "home");
-        model.addAttribute("theme", THEME_MKEIN2);
+        model.addAttribute("theme", THEME_SALINE);
         return "home";
     }
 
