@@ -144,7 +144,7 @@ a {
   pointer-events: none;
 }
 
-#background-stripe {
+#logo-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
