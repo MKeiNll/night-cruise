@@ -109,8 +109,9 @@ a {
   color: white;
 }
 
-#menu-container a:hover {
-  color: rgb(128, 128, 128);
+#menu-container a:not(#theme-link):not(#lang-link):not(.theme-option):not(.lang-option):hover {
+  color: rgb(224, 224, 224);
+  background-color: rgba(255, 20, 147, 0.5);
 }
 
 .menu-item {
@@ -124,14 +125,30 @@ a {
   border: 3px outset white;
 }
 
-#theme-button.menu-item {
+#theme-button {
   background-color: rgba(237, 226, 100, 0.7);
   text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254), -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
 }
 
-#lang-button.menu-item {
+#theme-button:hover {
+  background-color: rgba(237, 226, 100, 0.5);
+}
+
+#theme-button:hover > #theme-link{
+  color: rgb(224, 224, 224);
+}
+
+#lang-button {
   background-color: rgba(237, 100, 125, 0.7);
   text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254), -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
+}
+
+#lang-button:hover {
+  background-color: rgba(237, 100, 125, 0.5);
+}
+
+#lang-button:hover > #lang-link{
+  color: rgb(224, 224, 224);
 }
 
 #home-button,
@@ -218,7 +235,7 @@ a {
   font-style: italic;
 }
 
-#theme-link:hover {
+#theme-button:hover {
   cursor: pointer;
 }
 
@@ -234,8 +251,8 @@ a {
   height: 108px;
   width: 155px;
   top: 9px;
-  border: 3px solid rgba(192, 192, 255, 0.5);
-  background-color: rgb(235, 235, 235);
+  border: 3px solid rgba(237, 226, 100, 0.7);
+  background-color: rgba(101, 179, 254, 0.9);
 }
 
 #theme-option-container {
@@ -253,11 +270,6 @@ a {
   overflow: hidden;
 }
 
-#theme-option-container:hover ~ #theme-link {
-  background-color: rgba(192, 192, 255, 0.3);
-  color: rgb(211, 211, 211);
-}
-
 .theme-option {
   padding: 9px;
   white-space: nowrap;
@@ -267,8 +279,7 @@ a {
 
 .theme-option:hover:not(#theme-current) {
   cursor: pointer;
-  background-color: rgb(211, 211, 211);
-  color: white;
+  background-color: rgba(237, 226, 100, 0.4);
 }
 
 #home-button {
@@ -290,7 +301,7 @@ a {
   padding-right: 3px;
 }
 
-#lang-link:hover {
+#lang-button:hover {
   cursor: pointer;
 }
 
@@ -325,11 +336,6 @@ a {
   overflow: hidden;
 }
 
-#lang-option-container:hover ~ #lang-link {
-  background-color: rgba(255, 192, 192, 0.3);
-  color: rgb(211, 211, 211);
-}
-
 .lang-option {
   padding: 9px;
   white-space: nowrap;
@@ -344,7 +350,7 @@ a {
 }
 
 #theme-current {
-  background-color: rgba(192, 192, 255, 0.5);
+  background-color: rgba(237, 226, 100, 0.7);
 }
 
 .lang-current {
@@ -352,11 +358,11 @@ a {
 }
 
 #theme-current:hover {
-  color: black;
+  cursor: default;
 }
 
 .lang-current:hover {
-  color: black;
+  cursor: default;
 }
 
 .text-container {
