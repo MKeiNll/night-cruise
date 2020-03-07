@@ -306,16 +306,16 @@ a {
   background-size: 75%;
 }
 
-/*
+
 @supports (-moz-background-clip: text) {
   #logo {
     background-size: 45%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-image: url(https://media.giphy.com/media/glcEbibOkOkuY/giphy.gif);
     background-position: center;
     -moz-background-clip: text;
   }
 }
-*/
+
 @supports (-webkit-background-clip: text) {
   #logo {
     background-size: 45%;
@@ -324,15 +324,15 @@ a {
     -webkit-background-clip: text;
   }
 }
-/*
+
 @supports (background-clip: text) {
   #logo {
     background-size: 45%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-image: url(https://media.giphy.com/media/glcEbibOkOkuY/giphy.gif);
     background-position: center;
     background-clip: text;
   }
-}*/
+}
 
 #logo {
   height: 22vw;
