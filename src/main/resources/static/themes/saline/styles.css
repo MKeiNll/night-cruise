@@ -240,7 +240,7 @@ a {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 159px;
+  height: 123px;
   width: 161px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
@@ -263,7 +263,7 @@ a {
   align-items: flex-start;
   position: absolute;
   left: -2px;
-  top: 18px;
+  top: 29px;
   z-index: 1;
   -webkit-transition: width 0.15s, height 0.15s;
   transition: width 0.15s, height 0.15s;
