@@ -351,8 +351,14 @@ a {
 }
 
 #home-button {
-  width: 100px;
   display: inline-block;
+
+  background-color: rgba(255, 20, 147, 0.8);
+  padding: 10px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  border-radius: 30px;
+  border: 3px outset white;
 }
 
 .text-container {
