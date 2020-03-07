@@ -114,6 +114,10 @@ a {
   background-color: rgba(255, 20, 147, 0.5);
 }
 
+.invisible-element {
+  visibility: hidden;
+}
+
 .menu-item {
   margin-right: 20px;
   background-color: rgba(255, 20, 147, 0.8);
@@ -196,10 +200,6 @@ a {
 
 #theme-current:hover {
   cursor: default;
-}
-
-.lang-button-home {
-  margin-right: 130px;
 }
 
 #lang-button {
