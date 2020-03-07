@@ -62,11 +62,20 @@ html {
 }
 
 h2 {
-  margin-top: 50px;
-  margin-bottom: 18px;
-  padding-left: 18px;
+  margin-top: 40px;
+  padding-top: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 8px;
   font-size: 24px;
-  color: black;
+  color: rgb(255, 20, 147);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  background-color: rgba(101, 179, 254, 0.7);
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: -10px;
+  border-radius: 30px;
 }
 
 a {
@@ -370,7 +379,7 @@ a {
 }
 
 .text {
-  background-color: rgba(192, 192, 192, 0.3);
+  background-color: rgba(101, 179, 254, 0.7);
   padding-left: 18px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -382,6 +391,8 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
+  border: 5px solid rgba(255, 20, 147, 0.7);
+  border-radius: 30px;
 }
 
 .time-container {
