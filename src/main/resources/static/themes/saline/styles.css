@@ -62,24 +62,25 @@ html {
 }
 
 h2 {
-  margin-top: 40px;
-  padding-top: 10px;
-  margin-bottom: 8px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin-left: 8px;
+  margin-top: 35px;
+  padding-top: 15px;
+  margin-bottom: 3px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-left: 3px;
   font-size: 24px;
   color: rgb(255, 20, 147);
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
   background-color: rgba(101, 179, 254, 0.7);
   display: inline-block;
-  padding-right: 10px;
-  margin-right: -10px;
+  padding-right: 15px;
+  margin-right: -15px;
   border-radius: 30px;
 }
 
 a {
-  color: rgb(128, 128, 192);
+  color: rgb(255, 20, 147);
+  font-weight: bold;
 }
 
 .title-container {
@@ -94,7 +95,7 @@ a {
 #menu-container {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 880px;
   font-weight: normal;
   position: relative;
   flex-wrap: wrap;
@@ -116,6 +117,7 @@ a {
 #menu-container a {
   text-decoration: none;
   color: white;
+  font-weight: normal !important;
 }
 
 #menu-container a:not(#theme-link):not(#lang-link):not(.theme-option):not(.lang-option):hover {
@@ -379,13 +381,13 @@ a {
 }
 
 .text {
-  background-color: rgba(101, 179, 254, 0.7);
+  background-color: rgba(101, 179, 254, 0.9);
   padding-left: 18px;
   padding-top: 18px;
   padding-bottom: 18px;
   padding-right: 18px;
   line-height: 24px;
-  width: 900px;
+  width: 890px;
   text-align: justify;
   margin-left: -8px;
   margin-top: 0;
@@ -393,28 +395,43 @@ a {
   margin-right: 0;
   border: 5px solid rgba(255, 20, 147, 0.7);
   border-radius: 30px;
+  color: white;
+}
+
+.text b {
+  text-shadow: -1px -1px 0 rgb(255, 20, 147), 1px -1px 0 rgb(255, 20, 147), -1px 1px 0 rgb(255, 20, 147), 1px 1px 0 rgb(255, 20, 147);
 }
 
 .time-container {
   display: flex;
   flex-direction: column;
-  background-color: rgba(192, 192, 192, 0.3);
-  width: 400px;
-  height: 68px;
-  padding-right: 5px;
+  background-color: rgb(101, 179, 254);
+  width: 394px;
+  height: 63px;
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 9px;
   position: relative;
   right: 5px;
+  border: 3px solid rgba(255, 20, 147, 0.7);
+  border-radius: 30px;
 }
 
 .time-container-small {
   display: flex;
   flex-direction: column;
-  background-color: rgba(192, 192, 192, 0.3);
-  width: 400px;
-  height: 34px;
-  padding-right: 5px;
+  background-color: rgb(101, 179, 254);
+  width: 394px;
+  height: 63px;
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 9px;
   position: relative;
   right: 5px;
+  border: 3px solid rgba(255, 20, 147, 0.7);
+  border-radius: 30px;
 }
 
 .time-created {
@@ -429,7 +446,7 @@ a {
 }
 
 .time-updated-border {
-  border-bottom: 1px solid rgba(64, 64, 64, 0.5);
+  border-bottom: 1px solid rgba(255, 20, 147, 0.7);
 }
 
 .time-updated {
