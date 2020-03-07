@@ -128,14 +128,74 @@ a {
 #theme-button {
   background-color: rgba(237, 226, 100, 0.7);
   text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254), -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
+  display: inline-block;
+  position: relative;
 }
 
 #theme-button:hover {
   background-color: rgba(237, 226, 100, 0.5);
+  cursor: pointer;
+}
+
+#theme-button:hover > #theme-option-container {
+  height: 125px;
+  width: 163px;
+  -webkit-transition: width 0.4s, height 0.4s;
+  transition: width 0.4s, height 0.4s;
 }
 
 #theme-button:hover > #theme-link{
   color: rgb(224, 224, 224);
+}
+
+#theme-link {
+  font-style: italic;
+}
+
+#theme-options {
+  position: relative;
+  height: 108px;
+  width: 155px;
+  top: 9px;
+  background-color: rgba(101, 179, 254, 0.9);
+  overflow: hidden;
+  border: 4px solid rgba(237, 226, 100, 0.7);
+  border-radius: 20px;
+}
+
+#theme-option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: -2px;
+  top: 29px;
+  z-index: 1;
+  -webkit-transition: width 0.15s, height 0.15s;
+  transition: width 0.15s, height 0.15s;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+.theme-option {
+  padding: 9px;
+  white-space: nowrap;
+  display: inline-block;
+  width: 137px;
+}
+
+.theme-option:hover:not(#theme-current) {
+  cursor: pointer;
+  background-color: rgba(237, 226, 100, 0.4);
+}
+
+#theme-current {
+  background-color: rgba(237, 226, 100, 0.7);
+}
+
+#theme-current:hover {
+  cursor: default;
 }
 
 #lang-button {
@@ -152,7 +212,7 @@ a {
 }
 
 #home-button,
-.menu-item:not(#theme) {
+.menu-item {
   margin-top: 3px;
 }
 
@@ -226,64 +286,6 @@ a {
   filter: brightness(1.5) drop-shadow(6px 10px 6px rgba(255, 255, 255, 0.8));
 }
 
-#theme-button {
-  display: inline-block;
-  position: relative;
-}
-
-#theme-link {
-  font-style: italic;
-}
-
-#theme-button:hover {
-  cursor: pointer;
-}
-
-#theme-button:hover > #theme-option-container {
-  height: 125px;
-  width: 163px;
-  -webkit-transition: width 0.4s, height 0.4s;
-  transition: width 0.4s, height 0.4s;
-}
-
-#theme-options {
-  position: relative;
-  height: 108px;
-  width: 155px;
-  top: 9px;
-  background-color: rgba(101, 179, 254, 0.9);
-  overflow: hidden;
-  border: 4px solid rgba(237, 226, 100, 0.7);
-  border-radius: 20px;
-}
-
-#theme-option-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  left: -2px;
-  top: 29px;
-  z-index: 1;
-  -webkit-transition: width 0.15s, height 0.15s;
-  transition: width 0.15s, height 0.15s;
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
-}
-
-.theme-option {
-  padding: 9px;
-  white-space: nowrap;
-  display: inline-block;
-  width: 137px;
-}
-
-.theme-option:hover:not(#theme-current) {
-  cursor: pointer;
-  background-color: rgba(237, 226, 100, 0.4);
-}
-
 #home-button {
   width: 100px;
   display: inline-block;
@@ -351,16 +353,8 @@ a {
   color: white;
 }
 
-#theme-current {
-  background-color: rgba(237, 226, 100, 0.7);
-}
-
 .lang-current {
   background-color: rgba(255, 192, 192, 0.5);
-}
-
-#theme-current:hover {
-  cursor: default;
 }
 
 .lang-current:hover {
