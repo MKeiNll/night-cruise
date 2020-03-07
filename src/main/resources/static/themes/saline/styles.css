@@ -202,10 +202,11 @@ a {
 
 #theme-current {
   background-color: rgba(237, 226, 100, 0.7);
+  cursor: default;
 }
 
-#theme-current:hover {
-  cursor: default;
+.lang-current:active {
+  pointer-events: none;
 }
 
 #lang-button {
@@ -275,10 +276,11 @@ a {
 
 .lang-current {
   background-color: rgba(255, 192, 192, 0.7);
+  cursor: default;
 }
 
-.lang-current:hover {
-  cursor: default;
+.lang-current:active {
+  pointer-events: none;
 }
 
 #home-button,
