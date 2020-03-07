@@ -283,6 +283,8 @@ a {
 .menu-item-selected {
   font-weight: bold;
   pointer-events: none;
+  border: 3px inset white !important;
+  background-color: rgba(144, 144, 144, 0.8) !important;
 }
 
 #logo-container {
