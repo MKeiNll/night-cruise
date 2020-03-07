@@ -289,8 +289,7 @@ a {
 .menu-item-selected {
   font-weight: bold;
   pointer-events: none;
-  border: 3px inset white !important;
-  background-color: rgba(144, 144, 144, 0.8) !important;
+  background-color: rgba(255, 139, 235, 0.8) !important;
 }
 
 #logo-container {
@@ -347,7 +346,7 @@ a {
   line-height: 30vw;
   font-size: 30vw;
   font-family: "Ruthie", cursive;
-  color: rgba(255, 20, 147, 0.5);
+  color: rgba(255, 20, 147, 0.4);
   text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.6);
   padding-left: 15%;
   padding-right: 15%;
