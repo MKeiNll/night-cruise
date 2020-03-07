@@ -57,30 +57,27 @@ body {
 
 html {
   font-family: 'Fira Mono';
-  font-size: 18px;
+  font-size: 20px;
   line-height: 18px;
 }
 
 h2 {
+  padding: 18px;
   margin-top: 33px;
-  padding-top: 15px;
-  margin-bottom: 3px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  margin-left: 15px;
-  font-size: 24px;
-  color: rgb(255, 20, 147);
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  background-color: rgba(101, 179, 254, 0.5);
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: white;
+  background-color: rgba(255, 20, 150, 0.8);
   display: inline-block;
   padding-right: 15px;
   margin-right: -15px;
   border-radius: 15px;
+  margin-left: 17px;
+  text-decoration: underline;
 }
 
 a {
   color: rgb(255, 20, 147);
-  font-weight: bold;
 }
 
 .title-container {
@@ -105,7 +102,6 @@ a {
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-bottom: -30px;
   padding-left: 30px;
   margin-left: -30px;
   padding-right: 30px;
@@ -117,7 +113,6 @@ a {
 #menu-container a {
   text-decoration: none;
   color: white;
-  font-weight: normal !important;
 }
 
 #menu-container a:not(#theme-link):not(#lang-link):not(.theme-option):not(.lang-option):hover {
@@ -381,11 +376,8 @@ a {
 }
 
 .text {
-  background-color: rgba(101, 179, 254, 0.9);
-  padding-left: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 18px;
+  background-color: rgba(101, 179, 254, 0.95);
+  padding: 30px;
   line-height: 24px;
   width: 890px;
   text-align: justify;
@@ -399,14 +391,19 @@ a {
 }
 
 .text b {
-  text-shadow: -1px -1px 0 rgb(255, 20, 147), 1px -1px 0 rgb(255, 20, 147), -1px 1px 0 rgb(255, 20, 147), 1px 1px 0 rgb(255, 20, 147);
+  font-weight: bold;
+  color: rgb(255, 20, 150);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.text a {
+  font-size: 25px;
 }
 
 .time-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(101, 179, 254);
-  width: 394px;
+  width: 430px;
   height: 63px;
   padding-right: 20px;
   padding-left: 15px;
@@ -421,8 +418,7 @@ a {
 .time-container-small {
   display: flex;
   flex-direction: column;
-  background-color: rgb(101, 179, 254);
-  width: 394px;
+  width: 430px;
   height: 63px;
   padding-right: 20px;
   padding-left: 15px;
@@ -439,14 +435,14 @@ a {
   display: flex;
   justify-content: space-between;
   height: 34px;
-  width: 395px;
+  width: 430px;
   margin-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .time-updated-border {
-  border-bottom: 1px solid rgba(255, 20, 147, 0.7);
+  border-bottom: 3px solid rgba(255, 20, 147, 0.7);
 }
 
 .time-updated {
@@ -454,7 +450,7 @@ a {
   display: flex;
   justify-content: space-between;
   height: 34px;
-  width: 395px;
+  width: 430px;
   margin-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -464,7 +460,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 135px;
+  width: 155px;
   margin-right: 5px;
 }
 
