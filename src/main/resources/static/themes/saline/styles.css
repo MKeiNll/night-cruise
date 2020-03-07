@@ -62,20 +62,20 @@ html {
 }
 
 h2 {
-  margin-top: 35px;
+  margin-top: 33px;
   padding-top: 15px;
   margin-bottom: 3px;
   padding-bottom: 15px;
   padding-left: 15px;
-  margin-left: 3px;
+  margin-left: 15px;
   font-size: 24px;
   color: rgb(255, 20, 147);
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  background-color: rgba(101, 179, 254, 0.7);
+  background-color: rgba(101, 179, 254, 0.5);
   display: inline-block;
   padding-right: 15px;
   margin-right: -15px;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 a {
@@ -389,7 +389,7 @@ a {
   line-height: 24px;
   width: 890px;
   text-align: justify;
-  margin-left: -8px;
+  margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
