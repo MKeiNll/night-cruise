@@ -251,10 +251,10 @@ a {
   height: 108px;
   width: 155px;
   top: 9px;
-  border: 3px solid rgba(237, 226, 100, 0.7);
   background-color: rgba(101, 179, 254, 0.9);
-  border-radius: 20px;
   overflow: hidden;
+  border: 3px solid rgba(237, 226, 100, 0.7);
+  border-radius: 20px;
 }
 
 #theme-option-container {
@@ -262,7 +262,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  left: -12px;
+  left: -2px;
   top: 18px;
   z-index: 1;
   -webkit-transition: width 0.15s, height 0.15s;
