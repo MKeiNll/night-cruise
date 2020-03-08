@@ -181,6 +181,8 @@ a {
   font-style: italic;
   background-color: rgba(192, 192, 255, 0.5);
   color: rgb(64, 64, 64);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #theme-link:hover {
@@ -256,7 +258,8 @@ a {
   font-style: italic;
   background-color: rgba(255, 192, 192, 0.5);
   color: rgb(128, 96, 96) !important;
-  padding-right: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #lang-link:hover {
