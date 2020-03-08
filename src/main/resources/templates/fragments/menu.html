@@ -2,9 +2,9 @@
     <div id="menu-container">
         <div id="left-menu-container">
             <a class="menu-item" th:text="#{menu.developments}" href="./developments"
-               th:classappend="${current.equals('developments')} ? menu-item-selected : null"></a>
+               th:classappend="${currentPage.equals('developments')} ? menu-item-selected : null"></a>
             <a class="menu-item" th:text="#{menu.about}" href="./about"
-               th:classappend="${current.equals('about')} ? menu-item-selected : null"></a>
+               th:classappend="${currentPage.equals('about')} ? menu-item-selected : null"></a>
         </div>
         <div id="right-menu-container">
             <div id="theme-button" class="menu-item">
@@ -31,7 +31,7 @@
                 </div>
                 <a th:text="#{menu.language}" id="lang-link"></a>
             </div>
-            <a id="home-button" th:classappend="${current.equals('home')} ? 'invisible-element' : null" th:text="'< ' + #{menu.home}" href="./"></a>
+            <a id="home-button" th:classappend="${currentPage.equals('home')} ? 'invisible-element' : null" th:text="'< ' + #{menu.home}" href="./"></a>
         </div>
     </div>
 </div>

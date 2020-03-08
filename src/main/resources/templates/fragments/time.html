@@ -4,80 +4,82 @@
     <div th:if="${updated != null}" class="time-updated" th:inline="text"
          th:classappend="${created != null} ? time-updated-border : null">[[#{time.updated}]]
         <div class="time" th:inline="text"
-             th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(updated).getTime()}">
+             th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(updated).getTime()},
+                      path = ${currentTheme.equals('vivid') ? 'themes/vivid/' : 'themes/light/'}">
             [[${updated}]]
-            <img th:attr="title=#{time.updated.today}" src="time_today.svg"
+            <img th:attr="title=#{time.updated.today}" th:src="${path} + 'time_today.svg'"
                  width="22"
                  height="22" th:if="${timePassed < 86400000l}">
-            <img th:attr="title=#{time.updated.week}" src="time_week.svg"
+            <img th:attr="title=#{time.updated.week}" th:src="${path} + time_week.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 86400000l && timePassed < 604800000l}">
-            <img th:attr="title=#{time.updated.month}" src="time_month.svg"
+            <img th:attr="title=#{time.updated.month}" th:src="${path} + 'time_month.svg'"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 604800000l && timePassed < 2592000000l}">
-            <img th:attr="title=#{time.updated.6months}" src="time_6-months.svg"
+            <img th:attr="title=#{time.updated.6months}" th:src="${path} + time_6-months.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 2592000000l && timePassed < 15778476000l}">
-            <img th:attr="title=#{time.updated.year}" src="time_year.svg"
+            <img th:attr="title=#{time.updated.year}" th:src="${path} + time_year.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 15778476000l && timePassed < 31556952000l}">
-            <img th:attr="title=#{time.updated.2years}" src="time_2-years.svg"
+            <img th:attr="title=#{time.updated.2years}" th:src="${path} + time_2-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 31556952000l && timePassed < 63113904000l}">
-            <img th:attr="title=#{time.updated.5years}" src="time_5-years.svg"
+            <img th:attr="title=#{time.updated.5years}" th:src="${path} + time_5-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 63113904000l && timePassed < 157784760000l}">
-            <img th:attr="title=#{time.updated.10years}" src="time_10-years.svg"
+            <img th:attr="title=#{time.updated.10years}" th:src="${path} + time_10-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 157784760000l && timePassed < 315569520000l}">
-            <img th:attr="title=#{time.updated.10yearsOrMore}" src="time_10-years-more.svg"
+            <img th:attr="title=#{time.updated.10yearsOrMore}" th:src="${path} + time_10-years-more.svg"
                  width="22"
                  height="22" th:if="${timePassed >= 315569520000l}">
         </div>
     </div>
     <div th:if="${created != null}" class="time-created" th:inline="text">[[#{time.created}]]
         <div class="time" th:inline="text"
-             th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(created).getTime()}">
+             th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(created).getTime()},
+                      path = ${currentTheme.equals('vivid') ? 'themes/vivid/' : 'themes/light/'}">
             [[${created}]]
-            <img th:attr="title=#{time.created.today}" src="time_today.svg"
+            <img th:attr="title=#{time.created.today}" th:src="${path} + time_today.svg"
                  width="22"
                  height="22" th:if="${timePassed < 86400000l}">
-            <img th:attr="title=#{time.created.week}" src="time_week.svg"
+            <img th:attr="title=#{time.created.week}" th:src="${path} + time_week.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 86400000l && timePassed < 604800000l}">
-            <img th:attr="title=#{time.created.month}" src="time_month.svg"
+            <img th:attr="title=#{time.created.month}" th:src="${path} + time_month.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 604800000l && timePassed < 2592000000l}">
-            <img th:attr="title=#{time.created.6months}" src="time_6-months.svg"
+            <img th:attr="title=#{time.created.6months}" th:src="${path} + time_6-months.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 2592000000l && timePassed < 15778476000l}">
-            <img th:attr="title=#{time.created.year}" src="time_year.svg"
+            <img th:attr="title=#{time.created.year}" th:src="${path} + time_year.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 15778476000l && timePassed < 31556952000l}">
-            <img th:attr="title=#{time.created.2years}" src="time_2-years.svg"
+            <img th:attr="title=#{time.created.2years}" th:src="${path} + time_2-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 31556952000l && timePassed < 63113904000l}">
-            <img th:attr="title=#{time.created.5years}" src="time_5-years.svg"
+            <img th:attr="title=#{time.created.5years}" th:src="${path} + time_5-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 63113904000l && timePassed < 157784760000l}">
-            <img th:attr="title=#{time.created.10years}" src="time_10-years.svg"
+            <img th:attr="title=#{time.created.10years}" th:src="${path} + time_10-years.svg"
                  width="22"
                  height="22"
                  th:if="${timePassed >= 157784760000l && timePassed < 315569520000l}">
-            <img th:attr="title=#{time.created.10yearsOrMore}" src="time_10-years-more.svg"
+            <img th:attr="title=#{time.created.10yearsOrMore}" th:src="${path} + time_10-years-more.svg"
                  width="22"
                  height="22" th:if="${timePassed >= 315569520000l}">
         </div>
