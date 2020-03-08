@@ -321,12 +321,20 @@ a {
   background-color: rgba(192, 192, 255, 0.5);
 }
 
+#theme-current:hover {
+  color: black;
+}
+
+.theme-current:active {
+  pointer-events: none;
+}
+
 .lang-current {
   background-color: rgba(255, 192, 192, 0.5);
 }
 
-#theme-current:hover {
-  color: black;
+.lang-current:active {
+  pointer-events: none;
 }
 
 .lang-current:hover {
