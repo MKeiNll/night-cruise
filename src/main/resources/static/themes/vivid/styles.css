@@ -389,6 +389,16 @@ a {
   font-size: inherit !important;
 }
 
+#about-text-container b {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1400px){
+  #about-text-container b {
+    font-size: 30px;
+  }
+}
+
 .text {
   background-color: rgba(101, 179, 254, 0.95);
   padding: 30px;
