@@ -114,7 +114,7 @@ a {
   pointer-events: none;
 }
 
-#background-stripe {
+#logo-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +165,7 @@ a {
   font-size: 15vw;
   font-family: "Audiowide", cursive;
   font-weight: bold;
-  color: #ff64ff;
+  color: transparent;
   filter: saturate(500%);
   text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
   margin-left: 15%;
@@ -190,16 +190,16 @@ a {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 159px;
-  width: 161px;
+  height: 125px;
+  width: 126px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
 
 #theme-options {
   position: relative;
-   height: 108px;
-  width: 155px;
+  height: 108px;
+  width: 120px;
   top: 9px;
   border: 3px solid rgba(192, 192, 255, 0.5);
   background-color: rgb(235, 235, 235);
@@ -229,7 +229,7 @@ a {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 137px;
+  width: 112px;
 }
 
 .theme-option:hover:not(#theme-current) {
@@ -267,7 +267,7 @@ a {
 
 #lang-button:hover > #lang-option-container {
   height: 123px;
-  width: 161px;
+  width: 143px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
@@ -275,7 +275,7 @@ a {
 #lang-options {
   position: relative;
   height: 108px;
-  width: 155px;
+  width: 137px;
   top: 9px;
   border: 3px solid rgba(255, 192, 192, 0.5);
   background-color: rgb(235, 235, 235);
@@ -305,7 +305,7 @@ a {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 137px;
+  width: 129px;
 }
 
 .lang-option:hover:not(.lang-current) {

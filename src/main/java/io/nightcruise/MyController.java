@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MyController {
-    public static final String THEME_MKEIN2 = "MKeiN2";
-    public static final String THEME_SALINE = "Saline";
+    public static final String LIGHT_THEME_LOGO = "MKeiN2";
+    public static final String VIVID_THEME_LOGO = "Saline";
 
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
         model.addAttribute("current", "home");
-        model.addAttribute("theme", THEME_SALINE);
+        model.addAttribute("theme", LIGHT_THEME_LOGO);
         return "home";
     }
 
