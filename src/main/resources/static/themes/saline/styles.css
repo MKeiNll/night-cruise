@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 250px;
+
   margin-top: 0px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+
     overflow-x: hidden;
     padding-bottom: 120px;
     width: 900px;
@@ -106,21 +108,10 @@ a {
   #menu-container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    padding-left: 5%;
-    padding-right:  5%;
+    width: 86%;
+    margin-left: 2%;
     font-weight: normal;
     position: relative;
-
-    background-color: rgba(152, 0, 158, 0.8);
-    color: white;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    margin-bottom: -30px;
-    padding-right: 100%;
-    margin-right: -100%;
-    padding-left: 100%;
-    margin-left: -100%;
   }
 }
 
@@ -415,15 +406,9 @@ a {
 
 @media only screen and (max-width: 950px) {
   .text {
-    background-color: rgba(192, 192, 192, 0.3);
-    padding-left: 5%;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-right:  5%;
-    line-height: 24px;
+    background-color: rgba(101, 179, 254, 0.95);
     width: 90%;
     text-align: justify;
-    margin-left: -8px;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
