@@ -206,7 +206,7 @@ a {
   width: 112px;
 }
 
-.theme-option:hover:not(#theme-current) {
+.theme-option:hover:not(.theme-current) {
   cursor: pointer;
   background-color: rgb(211, 211, 211);
   color: white;
@@ -289,11 +289,11 @@ a {
   color: white;
 }
 
-#theme-current {
+.theme-current {
   background-color: rgba(192, 192, 255, 0.5);
 }
 
-#theme-current:hover {
+.theme-current:hover {
   color: black;
 }
 

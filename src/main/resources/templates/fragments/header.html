@@ -8,11 +8,22 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $(".lang-option").click(function () {
-                let selectedLocale = $(this).attr("data-locale");
                 $.post("/", {
-                    locale: selectedLocale
+                    locale: $(this).attr("data-locale")
                 }, function(data) {
                     location.reload();
+                });
+            });
+
+            $(".theme-option").click(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/setTheme',
+                    data: JSON.stringify({ theme: $(this).attr("data-theme") }),
+                    contentType: "application/json",
+                    success: function() {
+                        location.reload();
+                    },
                 });
             });
         });

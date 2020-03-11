@@ -10,10 +10,14 @@
             <div id="theme-button" class="menu-item">
                 <div id="theme-option-container">
                     <div id="theme-options">
-                        <a class="theme-option" id="theme-current" th:text="#{theme.light}"></a>
-<!--                        <a class="theme-option" th:text="#{theme.dark}"></a>-->
-                        <a class="theme-option" th:text="#{theme.vivid}"></a>
-                        <a class="theme-option" th:text="#{theme.random}"></a>
+                        <a class="theme-option" data-theme="light" th:text="#{theme.light}"
+                           th:classappend="${currentTheme.equals('light') && !isRandomTheme} ? 'theme-current' : null"></a>
+<!--                    <a class="theme-option" data-theme="dark" th:text="#{theme.dark
+                           th:classappend="${theme} == 'dark' ? 'theme-current' : null""></a>-->
+                        <a class="theme-option" data-theme="vivid" th:text="#{theme.vivid}"
+                           th:classappend="${currentTheme.equals('vivid') && !isRandomTheme} ? 'theme-current' : null"></a>
+                        <a class="theme-option" data-theme="random" th:text="#{theme.random}"
+                           th:classappend="${isRandomTheme} ? 'theme-current' : null"></a>
                     </div>
                 </div>
                 <a th:text="#{menu.theme}" id="theme-link"></a>

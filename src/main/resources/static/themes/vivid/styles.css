@@ -196,12 +196,12 @@ a {
   width: 122px;
 }
 
-.theme-option:hover:not(#theme-current) {
+.theme-option:hover:not(.theme-current) {
   cursor: pointer;
   background-color: rgba(237, 226, 100, 0.4);
 }
 
-#theme-current {
+.theme-current {
   background-color: rgba(237, 226, 100, 0.7);
   cursor: default;
 }
