@@ -11,14 +11,14 @@ public class MyController {
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
     public String getHome(Model model) {
         model.addAttribute("currentPage", "home");
-        model.addAttribute("currentTheme", "light");
+        model.addAttribute("currentTheme", "vivid");
         return "home";
     }
 
     @GetMapping("/about")
     public String getAbout(Model model) {
         model.addAttribute("currentPage", "about");
-        model.addAttribute("currentTheme", "light");
+        model.addAttribute("currentTheme", "vivid");
         model.addAttribute("websiteCreated", "23.02.2020");
         model.addAttribute("websiteUpdated", "28.02.2020");
         return "about";
@@ -27,7 +27,7 @@ public class MyController {
     @GetMapping("/developments")
     public String getDevelopments(Model model) {
         model.addAttribute("currentPage", "developments");
-        model.addAttribute("currentTheme", "light");
+        model.addAttribute("currentTheme", "vivid");
         model.addAttribute("sporexUpdated", "28.11.2018");
         model.addAttribute("sporexCreated", "21.06.2018");
         model.addAttribute("mbfCreated", "21.11.2016");
