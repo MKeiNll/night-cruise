@@ -163,16 +163,16 @@ a {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 125px;
-  width: 126px;
+  height: 89px;
+  width: 106px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
 
 #theme-options {
   position: relative;
-  height: 108px;
-  width: 120px;
+  height: 72px;
+  width: 100px;
   top: 9px;
   border: 3px solid rgba(192, 192, 255, 0.5);
   background-color: rgb(235, 235, 235);
@@ -202,7 +202,7 @@ a {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 112px;
+  width: 92px;
 }
 
 .theme-option:hover:not(.theme-current) {

@@ -149,8 +149,8 @@ a {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 125px;
-  width: 148px;
+  height: 89px;
+  width: 116px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
@@ -165,8 +165,8 @@ a {
 
 #theme-options {
   position: relative;
-  height: 108px;
-  width: 140px;
+  height: 72px;
+  width: 108px;
   top: 9px;
   background-color: rgba(101, 179, 254, 0.9);
   overflow: hidden;
@@ -193,7 +193,7 @@ a {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 122px;
+  width: 90px;
 }
 
 .theme-option:hover:not(.theme-current) {
@@ -310,7 +310,7 @@ a {
   padding-bottom: 100px;
   background-image: url(bg-stripe.png);
   background-repeat: no-repeat;
-  background-position: top 3vw left 1vw;
+  background-position: top 3vw left 0.5vw;
   background-size: 95%;
 }
 

@@ -39,18 +39,8 @@ public class TemplateController {
     }
 
     public void setTheme(String themeCookie, Model model) {
-        boolean isRandomTheme = false;
-        if (themeCookie != null) {
-            if (themeCookie.equals("random")) {
-                model.addAttribute("currentTheme", DEFAULT_THEME); // TODO - random theme functionality
-                isRandomTheme = true;
-            } else {
-                model.addAttribute("currentTheme", themeCookie);
-            }
-        } else {
-            model.addAttribute("currentTheme", DEFAULT_THEME);
-        }
-        model.addAttribute("isRandomTheme", isRandomTheme);
+        String theme = themeCookie != null ? themeCookie : DEFAULT_THEME;
+        model.addAttribute("currentTheme", theme);
     }
 
     @GetMapping("/about")
