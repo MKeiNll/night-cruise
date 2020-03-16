@@ -1,0 +1,57 @@
+html {
+  font-family: "Fira Mono";
+  line-height: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 250px;
+  padding-bottom: 120px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  background-repeat: repeat;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 951px) {
+  body {
+    margin: 0 auto;
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.invisible-element {
+  visibility: hidden;
+}
+
+.title-container {
+  width: 900px;
+}
+
+@media only screen and (max-width: 950px) {
+  .title-container {
+    width: 100%;
+  }
+}
+
+#left-menu-container,
+#right-menu-container {
+  display: flex;
+}
+
+#menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

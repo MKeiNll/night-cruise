@@ -1,48 +1,17 @@
+@use 'shared';
+
+$title-color: white;
+$title-background: rgba(255, 20, 150, 0.8);
+$link-color: rgb(255, 20, 147);
+
 html {
-  font-family: 'Fira Mono';
   font-size: 20px;
-  line-height: 18px;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 250px;
-
   margin-top: 0px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding-bottom: 120px;
-
   background: url(../themes/vivid/bg.png);
   background-size: 25%;
-  background-repeat: repeat;
-}
-
-@media only screen and (max-width: 1400px) and (min-width: 951px){
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-
-    overflow-x: hidden;
-    padding-bottom: 120px;
-    width: 900px;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    overflow-x: hidden;
-    padding-bottom: 120px;
-    width: 100%;
-  }
 }
 
 h2 {
@@ -50,8 +19,8 @@ h2 {
   margin-top: 33px;
   margin-bottom: 10px;
   font-size: 32px;
-  color: white;
-  background-color: rgba(255, 20, 150, 0.8);
+  color: $title-color;
+  background-color: $title-background;
   display: inline-block;
   padding-right: 15px;
   margin-right: -15px;
@@ -61,35 +30,11 @@ h2 {
 }
 
 a {
-  color: rgb(255, 20, 147);
-}
-
-.invisible-element {
-  visibility: hidden;
-}
-
-.title-container {
-  width: 900px;
-}
-
-@media only screen and (max-width: 950px) {
-  .title-container {
-    width: 100%;
-  }
-}
-
-#left-menu-container,
-#right-menu-container {
-  display: flex;
+  color: $link-color;
 }
 
 #menu-container {
-  display: flex;
-  justify-content: space-between;
   width: 880px;
-  font-weight: normal;
-  position: relative;
-  flex-wrap: wrap;
 
   background-color: rgba(101, 179, 254, 0.7);
   color: white;
@@ -120,7 +65,8 @@ a {
   color: white;
 }
 
-#menu-container a:not(#theme-link):not(#lang-link):not(.theme-option):not(.lang-option):hover {
+#menu-container
+  a:not(#theme-link):not(#lang-link):not(.theme-option):not(.lang-option):hover {
   color: rgb(224, 224, 224);
   background-color: rgba(255, 20, 147, 0.5);
 }
@@ -138,7 +84,8 @@ a {
 
 #theme-button {
   background-color: rgba(237, 226, 100, 0.9);
-  text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254), -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
+  text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254),
+    -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
   display: inline-block;
   position: relative;
 }
@@ -155,7 +102,7 @@ a {
   transition: width 0.4s, height 0.4s;
 }
 
-#theme-button:hover > #theme-link{
+#theme-button:hover > #theme-link {
   color: rgb(224, 224, 224);
 }
 
@@ -212,7 +159,8 @@ a {
 
 #lang-button {
   background-color: rgba(237, 100, 125, 0.9);
-  text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254), -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
+  text-shadow: -1px -1px 0 rgb(101, 179, 254), 1px -1px 0 rgb(101, 179, 254),
+    -1px 1px 0 rgb(101, 179, 254), 1px 1px 0 rgb(101, 179, 254);
   display: inline-block;
   position: relative;
 }
@@ -314,7 +262,6 @@ a {
   background-size: 95%;
 }
 
-
 @supports (-moz-background-clip: text) {
   #logo {
     background-size: 45%;
@@ -348,7 +295,8 @@ a {
   font-size: 20vw;
   font-family: "Ruthie", cursive;
   color: rgba(255, 20, 147, 0.3);
-  text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.3), 0px 0px 0px rgba(0, 0, 0, 0.6);
+  text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.3),
+    0px 0px 0px rgba(0, 0, 0, 0.6);
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: -100px;
@@ -392,7 +340,7 @@ a {
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px) {
   #about-text-container b {
     font-size: 30px;
   }
@@ -427,7 +375,8 @@ a {
 .text b {
   font-weight: bold;
   color: rgb(255, 20, 150);
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
 .text a {
