@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  font-family: 'Fira Mono';
+  font-family: "Fira Mono";
   font-size: 18px;
   line-height: 18px;
 }
@@ -140,7 +140,8 @@ a {
   font-weight: bold;
   color: transparent;
   filter: saturate(500%);
-  text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5),
+    0px 0px 0px rgba(0, 0, 0, 0.5);
   margin-left: 4%;
   white-space: nowrap;
 }
@@ -460,7 +461,7 @@ a {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 951px){
+@media only screen and (max-width: 1400px) and (min-width: 951px) {
   body {
     display: flex;
     flex-direction: column;
@@ -498,7 +499,7 @@ a {
     justify-content: space-between;
     width: 90%;
     padding-left: 5%;
-    padding-right:  5%;
+    padding-right: 5%;
     margin-top: 70px;
     font-weight: normal;
     position: relative;
@@ -515,7 +516,7 @@ a {
     padding-left: 5%;
     padding-top: 18px;
     padding-bottom: 18px;
-    padding-right:  5%;
+    padding-right: 5%;
     line-height: 24px;
     width: 90%;
     text-align: justify;
