@@ -106,7 +106,7 @@ a {
 
 @supports (-moz-background-clip: text) {
   #logo {
-    background-size: 45%;
+    background-size: 38%;
     background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
     background-position: center;
     -moz-background-clip: text;
@@ -115,7 +115,7 @@ a {
 
 @supports (-webkit-background-clip: text) {
   #logo {
-    background-size: 45%;
+    background-size: 38%;
     background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
     background-position: center;
     -webkit-background-clip: text;
@@ -124,7 +124,7 @@ a {
 
 @supports (background-clip: text) {
   #logo {
-    background-size: 45%;
+    background-size: 38%;
     background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
     background-position: center;
     background-clip: text;
@@ -132,16 +132,15 @@ a {
 }
 
 #logo {
-  height: 260px;
-  line-height: 15vw;
-  font-size: 15vw;
+  line-height: 25vw;
+  font-size: 13vw;
   font-family: "Audiowide", cursive;
   font-weight: bold;
   color: transparent;
   filter: saturate(500%);
   text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 4%;
+  white-space: nowrap;
 }
 
 #theme-button {

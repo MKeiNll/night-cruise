@@ -15,7 +15,7 @@ class SetThemeRequestBody {
 }
 
 @Controller
-public class MyController { // TODO - set data attarasd to html
+public class TemplateController {
 
     public static final int THEME_COOKIE_MAX_AGE = 10 * 365 * 24 * 60 * 60; // 10 years
 
