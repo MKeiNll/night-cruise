@@ -136,6 +136,10 @@ body {
 
 // LANGUAGE SELECT
 
+#lang-link {
+  font-style: italic;
+}
+
 #lang-button {
   display: inline-block;
   position: relative;
@@ -177,4 +181,17 @@ body {
 
 .lang-option:hover:not(.lang-current) {
   cursor: pointer;
+}
+
+// LOGO 
+
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 33vw;
+  position: absolute;
+  background-repeat: no-repeat;
 }

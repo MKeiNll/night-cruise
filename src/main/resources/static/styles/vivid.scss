@@ -179,10 +179,6 @@ a {
   color: $lang-button-hover-color;
 }
 
-#lang-link {
-  font-style: italic;
-}
-
 #lang-options {
   border: $lang-options-border;
   border-radius: 20px;
@@ -211,20 +207,9 @@ a {
 // LOGO
 
 #logo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 33vw;
-  position: absolute;
-  top: 170px;
-  left: 0px;
-  z-index: -100;
   margin-bottom: -100px;
   padding-bottom: 100px;
   background-image: url(../themes/vivid/bg-stripe.png);
-  background-repeat: no-repeat;
   background-position: top 3vw left 0.5vw;
   background-size: 95%;
 }
