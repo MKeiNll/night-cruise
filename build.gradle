@@ -52,4 +52,5 @@ bootWar.dependsOn sassCompile
 
 processResources {
 	exclude('static/styles')
+	exclude('static/builds')
 }

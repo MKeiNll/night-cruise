@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
 
+    public static final String REDIRECT_PATH = "redirect:https://nightcruise.io";
+
     @RequestMapping("/error")
     public String handleError() {
-        return "redirect:/";
+        return REDIRECT_PATH;
     }
 
     @Override
@@ -19,6 +21,6 @@ public class ErrorController implements org.springframework.boot.web.servlet.err
 
     @ExceptionHandler(Exception.class)
     public String handleException(Exception e) {
-        return "redirect:/";
+        return REDIRECT_PATH;
     }
 }
