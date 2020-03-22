@@ -28,7 +28,7 @@ public class TemplateController {
         return "home";
     }
 
-    @RequestMapping(value = {"/setTheme"}, method = {RequestMethod.POST})
+    @PostMapping("/setTheme")
     @ResponseBody
     public ResponseEntity setTheme(@RequestBody(required = false) SetThemeRequestBody setThemeRequest,
                                    HttpServletResponse response) throws IOException {
