@@ -172,7 +172,18 @@ a {
   color: $theme-link-hover-color;
 }
 
+#theme-button:hover > #theme-option-container {
+  height: 93px;
+  width: 113px;
+}
+
+.theme-option {
+  width: 97px;
+}
+
 #theme-options {
+  width: 105px;
+  height: 76px;
   background-color: $theme-options-background;
   overflow: hidden;
   border: $theme-options-border;
@@ -213,7 +224,18 @@ a {
   color: $lang-button-hover-color;
 }
 
+#lang-button:hover > #lang-option-container {
+  height: 131px;
+  width: 150px;
+}
+
+.lang-option {
+  width: 134px;
+}
+
 #lang-options {
+  width: 142px;
+  height: 114px;
   border: $lang-options-border;
   border-radius: 20px;
   background-color: $lang-options-background;

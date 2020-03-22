@@ -85,15 +85,11 @@ body {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 89px;
-  width: 106px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
 
 #theme-options {
-  height: 72px;
-  width: 100px;
   position: relative;
   top: 9px;
 }
@@ -115,7 +111,6 @@ body {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 92px;
 }
 
 .theme-option:hover:not(.theme-current) {
@@ -134,16 +129,12 @@ body {
 }
 
 #lang-button:hover > #lang-option-container {
-  height: 123px;
-  width: 143px;
   -webkit-transition: width 0.4s, height 0.4s;
   transition: width 0.4s, height 0.4s;
 }
 
 #lang-options {
   position: relative;
-  height: 108px;
-  width: 137px;
   top: 9px;
 }
 
@@ -164,7 +155,6 @@ body {
   padding: 9px;
   white-space: nowrap;
   display: inline-block;
-  width: 129px;
 }
 
 .lang-option:hover:not(.lang-current) {

@@ -126,7 +126,18 @@ a {
   cursor: pointer;
 }
 
+#theme-button:hover > #theme-option-container {
+  height: 89px;
+  width: 106px;
+}
+
+.theme-option {
+  width: 82px;
+}
+
 #theme-options {
+  width: 100px;
+  height: 72px;
   background-color: $theme-options-background;
   border: $theme-options-border;
 }
@@ -173,7 +184,18 @@ a {
   cursor: pointer;
 }
 
+#lang-button:hover > #lang-option-container {
+  height: 123px;
+  width: 143px;
+}
+
+.lang-option {
+  width: 119px;
+}
+
 #lang-options {
+  width: 137px;
+  height: 108px;
   border: $lang-options-border;
   background-color: $lang-options-background;
 }
