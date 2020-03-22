@@ -204,6 +204,10 @@ a {
   cursor: default;
 }
 
+.theme-current:active {
+  pointer-events: none;
+}
+
 // LANGUAGE SELECT
 
 .lang-current:active {
