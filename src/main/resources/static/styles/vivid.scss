@@ -47,8 +47,7 @@ $home-button-border: 3px outset white;
 $logo-color: rgba(255, 20, 147, 0.3);
 $logo-text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.3),
   0px 0px 0px rgba(0, 0, 0, 0.6);
-$logo-filter-drop-shadow: 8px 8px 0px rgba(255, 255, 255, 0.3),
-  0px 0px 0px rgba(0, 0, 0, 0.6);
+$logo-filter-drop-shadow: 6px 10px 6px rgba(255, 255, 255, 0.8);
 
 $text-background: rgba(101, 179, 254, 0.95);
 $text-border: 5px solid rgba(255, 20, 147, 0.7);
@@ -112,8 +111,8 @@ a {
   border: $menu-border;
 
   margin-top: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 18px;
   padding-left: 30px;
   margin-left: -30px;
   padding-right: 30px;
@@ -142,9 +141,9 @@ a {
   margin-right: 20px;
   background-color: $menu-item-background;
   padding: 10px;
+  padding-top: 11px;
   margin-top: -10px;
   margin-left: -10px;
-  margin-bottom: -10px;
   border-radius: 30px;
   border: $menu-item-border;
 }
