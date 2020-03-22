@@ -33,6 +33,7 @@ $lang-current-background: rgba(255, 192, 192, 0.5);
 $logo-background: rgba(192, 192, 192, 0.3);
 $logo-text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5),
     0px 0px 0px rgba(0, 0, 0, 0.5);
+$logo-container-background: rgba(192, 192, 192, 0.3);
 
 $text-background: rgba(192, 192, 192, 0.3);
 
@@ -226,7 +227,7 @@ a {
 // LOGO
 
 #logo-container {
-  background-color: rgba(192, 192, 192, 0.3);
+  background-color: $logo-container-background;
   background-image: url(../themes/light/bg-stripe.png);
   background-position: top center;
   background-size: cover;

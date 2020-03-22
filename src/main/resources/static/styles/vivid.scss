@@ -52,6 +52,9 @@ $logo-filter-drop-shadow: 6px 10px 6px rgba(255, 255, 255, 0.8);
 $text-background: rgba(101, 179, 254, 0.95);
 $text-border: 5px solid rgba(255, 20, 147, 0.7);
 $text-color: white;
+$text-b-color: rgb(255, 20, 150);
+$text-b-text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
 
 $time-container-border: 3px solid rgba(255, 20, 147, 0.7);
 $time-inner-border: 3px solid rgba(255, 20, 147, 0.7);
@@ -328,9 +331,8 @@ a {
 
 .text b {
   font-weight: bold;
-  color: rgb(255, 20, 150);
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
+  color: $text-b-color;
+  text-shadow: $text-b-text-shadow;
 }
 
 .text a {
