@@ -35,22 +35,6 @@ body {
   }
 }
 
-// MISC
-
-.invisible-element {
-  visibility: hidden;
-}
-
-.title-container {
-  width: 900px;
-}
-
-@media only screen and (max-width: $SMALL_SCREEN) {
-  .title-container {
-    width: 100%;
-  }
-}
-
 // MENU
 
 #left-menu-container,
@@ -73,6 +57,10 @@ body {
 
 #menu-container a {
   text-decoration: none;
+}
+
+#home-button {
+  display: inline-block;
 }
 
 #home-button,
@@ -183,7 +171,7 @@ body {
   cursor: pointer;
 }
 
-// LOGO 
+// LOGO
 
 #logo-container {
   display: flex;
@@ -194,4 +182,123 @@ body {
   height: 33vw;
   position: absolute;
   background-repeat: no-repeat;
+}
+
+#logo {
+  white-space: nowrap;
+}
+
+@supports (-moz-background-clip: text) {
+  #logo {
+    background-position: center;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@supports (-webkit-background-clip: text) {
+  #logo {
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@supports (background-clip: text) {
+  #logo {
+    background-position: center;
+    background-clip: text;
+  }
+}
+
+// GENERIC
+
+.invisible-element {
+  visibility: hidden;
+}
+
+.title-container {
+  width: 900px;
+}
+
+.subtitle {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: $SMALL_SCREEN) {
+  .title-container {
+    width: 100%;
+  }
+}
+
+.text-container {
+  width: 900px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: $SMALL_SCREEN) {
+  .text-container {
+    width: 100%;
+  }
+}
+
+.text {
+  width: 900px;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 5px;
+}
+
+.time-container-small {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 5px;
+}
+
+.time-created {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.time-updated {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#contacts {
+  line-height: 36px;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 110px;
+  font-weight: bold;
 }
