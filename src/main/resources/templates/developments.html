@@ -21,9 +21,7 @@
         [[#{developments.sx.p6}]]
         <br><br>
         [[#{developments.sx.p7}]] <a href="https://sporex.monster" target="_blank">sporex.monster</a>
-        <div
-                th:replace="fragments/time(created=${sporexCreated}, updated=${sporexUpdated})"
-        ></div>
+        <div th:replace="fragments/time(created=${sporexCreated}, updated=${sporexUpdated})"></div>
     </div>
 </div>
 <div class="title-container">
@@ -44,9 +42,55 @@
         <b>NB!</b> [[#{developments.mbf.p6}]]
         <br><br>
         <a href="/builds/Marble Blast FUSION v0.12.2.rar" target="_blank">[[#{developments.mbf.p7}]]</a>
-        <div
-                th:replace="fragments/time(created=${mbfCreated}, updated=${mbfUpdated})"
-        ></div>
+        <div th:replace="fragments/time(created=${mbfCreated}, updated=${mbfUpdated})"></div>
+    </div>
+</div>
+<div class="title-container">
+    <h2>Tomb</h2>
+</div>
+<div class="text-container">
+    <div class="text" th:inline="text">
+        [[#{developments.t.p1}]]
+        <br><br>
+        [[#{developments.t.p2}]]
+        <br><br>
+        [[#{developments.t.p3}]]
+        <br><br>
+        [[#{developments.t.p4}]]
+        <br><br>
+        [(#{developments.t.p5})]
+        <br><br>
+        [(#{developments.t.p6})]
+        <br><br>
+        [(#{developments.t.p7})]
+        <br><br>
+        [(#{developments.t.p8})]
+        <div th:replace="fragments/time(created=${tombCreated}, updated=${tombUpdated})"></div>
+    </div>
+</div>
+<div class="title-container">
+    <h2>Cube</h2>
+</div>
+<div class="text-container">
+    <div class="text" th:inline="text">
+        [[#{developments.c.p1}]]
+        <br><br>
+        [[#{developments.c.p2}]]
+        <br><br>
+        [[#{developments.c.p3}]]
+        <br><br>
+        [[#{developments.c.p4}]]
+        <br>
+        [(#{developments.c.p5})]
+        <br>
+        [(#{developments.c.p6})]
+        <br><br>
+        [(#{developments.c.p7})]
+        <br><br>
+        [(#{developments.c.p8})]
+        <br><br>
+        [(#{developments.c.p9})]
+        <div th:replace="fragments/time(created=${cubeCreated}, updated=${cubeUpdated})"></div>
     </div>
 </div>
 </body>
