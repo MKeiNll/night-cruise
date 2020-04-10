@@ -62,10 +62,10 @@ public class TemplateController {
         model.addAttribute("sporexCreated", "21.06.2018");
         model.addAttribute("mbfCreated", "21.11.2016");
         model.addAttribute("mbfUpdated", "05.01.2017");
-        model.addAttribute("tombCreated", "0.0.0");
-        model.addAttribute("tombUpdated", "0.0.0");
-        model.addAttribute("cubeCreated", "0.0.0");
-        model.addAttribute("cubeUpdated", "0.0.0");
+        model.addAttribute("tombCreated", "15.10.2016");
+        model.addAttribute("tombUpdated", "27.07.2017");
+        model.addAttribute("cubeCreated", "02.10.2014");
+        model.addAttribute("cubeUpdated", "20.09.2016");
         return "developments";
     }
 }
