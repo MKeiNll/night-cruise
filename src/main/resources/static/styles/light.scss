@@ -82,7 +82,7 @@ a {
 }
 
 #menu-container {
-  width: 900px;
+  width: 1200px;
   margin-top: 60px;
 }
 
@@ -275,14 +275,13 @@ a {
   padding-right: 18px;
   line-height: 24px;
   margin-left: -8px;
-  width: 1200px;
 }
 
 @media only screen and (max-width: $SMALL_SCREEN) {
   .text {
     padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    padding-right: 1%;
+    width: 94%;
   }
 }
 
