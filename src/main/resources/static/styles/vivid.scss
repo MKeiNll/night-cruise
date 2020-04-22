@@ -59,6 +59,9 @@ $text-b-text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
 $time-container-border: 3px solid rgba(255, 20, 147, 0.7);
 $time-inner-border: 3px solid rgba(255, 20, 147, 0.7);
 
+$preview-background: rgba(255, 20, 147, 0.2);
+$preview-border: 10px solid rgba(255, 20, 147, 0.7);
+
 // HTML & BODY & H2 & A & B
 
 html {
@@ -107,7 +110,7 @@ a {
 // MENU
 
 #menu-container {
-  width: 880px;
+  width: 1280px;
   background-color: $menu-background;
   color: $menu-color;
   border: $menu-border;
@@ -313,6 +316,13 @@ a {
 
 // GENERIC
 
+.preview {
+  margin-left: 30px;
+  border: $preview-border;
+  border-radius: 30px;
+  background-color: $preview-background;
+}
+
 @media only screen and (min-width: $SMALL_SCREEN) {
   .text-container {
     margin-left: -45px;
@@ -327,7 +337,7 @@ a {
   border: $text-border;
   border-radius: 30px;
   color: $text-color;
-  width: 940px;
+  width: 1240px;
 }
 
 @media only screen and (max-width: $SMALL_SCREEN) {

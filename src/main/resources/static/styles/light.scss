@@ -40,6 +40,9 @@ $text-background: rgba(192, 192, 192, 0.3);
 $time-container-background: rgba(192, 192, 192, 0.3);
 $time-inner-border: 1px solid rgba(64, 64, 64, 0.5);
 
+$preview-background: rgba(139, 163, 187, 0.2);
+$preview-border: 3px solid rgba(139, 163, 187, 0.5);
+
 // HTML & BODY & H2 & A & B
 
 html {
@@ -266,6 +269,12 @@ a {
 }
 
 // GENERIC
+
+.preview {
+  margin-left: 18px;
+  border: $preview-border;
+  background-color: $preview-background;
+}
 
 .text {
   background-color: $text-background;
