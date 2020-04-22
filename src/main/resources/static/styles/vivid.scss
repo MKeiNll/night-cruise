@@ -1,5 +1,7 @@
 @import "_shared";
 
+$VIVID_SMALL_SCREEN: 1470px;
+
 $font-size: 20px;
 
 $title-color: white;
@@ -72,6 +74,7 @@ html {
 body {
   background: url(../themes/vivid/bg.png);
   background-size: 25%;
+  min-width: 950px;
 }
 
 h2 {
@@ -98,13 +101,7 @@ a {
 }
 
 #about-text-container b {
-  font-size: 25px;
-}
-
-@media only screen and (max-width: $LARGE_SCREEN) {
-  #about-text-container b {
-    font-size: 30px;
-  }
+  font-size: 30px;
 }
 
 // MENU
@@ -124,7 +121,7 @@ a {
   border-radius: 60px;
 }
 
-@media only screen and (max-width: $SMALL_SCREEN) {
+@media only screen and (max-width: $VIVID_SMALL_SCREEN) {
   #menu-container {
     width: 86%;
     margin-left: 2%;
@@ -334,7 +331,7 @@ a {
   width: 1240px;
 }
 
-@media only screen and (max-width: $SMALL_SCREEN) {
+@media only screen and (max-width: $VIVID_SMALL_SCREEN) {
   .text {
     width: 90%;
   }
