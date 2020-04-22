@@ -323,12 +323,6 @@ a {
   background-color: $preview-background;
 }
 
-@media only screen and (min-width: $SMALL_SCREEN) {
-  .text-container {
-    margin-left: -45px;
-  }
-}
-
 .text {
   background-color: $text-background;
   padding: 30px;
