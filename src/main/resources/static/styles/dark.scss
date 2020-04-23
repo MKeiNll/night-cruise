@@ -1,29 +1,22 @@
 @import '_shared';
 
-$font-size: 18px; 
+$font-size: 18px;
+$menu-font-size: 22px;
 
-$color: white;
+$color: rgb(224, 224, 224);
 
 $title-color: black;
-$link-color: rgb(128, 128, 192);
+$link-color: rgb(224, 224, 224);
 
-$menu-link-color: black;
+$menu-link-color: rgb(224, 224, 224);
 $menu-link-hover-color: rgb(128, 128, 128);
 
-$theme-link-background: rgba(192, 192, 255, 0.5);
-$theme-link-color: rgb(64, 64, 64);
-$theme-link-hover-background: rgba(192, 192, 255, 0.3);
-$theme-link-hover-color: rgb(211, 211, 211);
 $theme-options-background: rgb(235, 235, 235);
 $theme-options-border: 3px solid rgba(192, 192, 255, 0.5);
 $theme-option-hover-background: rgb(211, 211, 211);
 $theme-option-hover-color: white;
 $theme-current-background: rgba(192, 192, 255, 0.5);
 
-$lang-link-color: rgb(128, 96, 96);
-$lang-link-background: rgba(255, 192, 192, 0.5);
-$lang-link-hover-color: rgb(160, 128, 128);
-$lang-link-hover-background: rgba(255, 192, 192, 0.3);
 $lang-options-background: rgb(235, 235, 235);
 $lang-options-border: 3px solid rgba(255, 192, 192, 0.5);
 $lang-option-hover-background: rgb(211, 211, 211);
@@ -31,14 +24,15 @@ $lang-option-hover-color: white;
 $lang-current-background: rgba(255, 192, 192, 0.5);
 
 $logo-background: rgba(192, 192, 192, 0.3);
-$logo-text-shadow: 8px 8px 0px rgba(255, 255, 255, 0.5),
-    0px 0px 0px rgba(0, 0, 0, 0.5);
-$logo-container-background: rgba(192, 192, 192, 0.3);
+$logo-text-shadow: 8px 8px 0px rgba(255,255,255,.7), 0px 0px 0px rgba(8,8,8,.9);
 
 $text-background: rgba(192, 192, 192, 0.3);
 
 $time-container-background: rgba(192, 192, 192, 0.3);
 $time-inner-border: 1px solid rgba(64, 64, 64, 0.5);
+
+$preview-background: rgba(139, 163, 187, 0.2);
+$preview-border: 3px solid rgba(139, 163, 187, 0.5);
 
 // HTML & BODY & H2 & A & B
 
@@ -49,7 +43,8 @@ html {
 
 body {
   color: $color;
-  background: url(../themes/dark/bg1.jpg);
+  background: url(../themes/dark/bg.jpg);
+  min-width: 800px;
 }
 
 h2 {
@@ -82,8 +77,9 @@ a {
 }
 
 #menu-container {
-  width: 900px;
-  margin-top: 60px;
+  width: 1200px;
+  margin-top: 30px;
+  font-size: $menu-font-size;
 }
 
 @media only screen and (max-width: $SMALL_SCREEN) {
@@ -115,15 +111,11 @@ a {
 // THEME SELECT
 
 #theme-link {
-  background-color: $theme-link-background;
-  color: $theme-link-color;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 #theme-link:hover {
-  background-color: $theme-link-hover-background;
-  color: $theme-link-hover-color;
   cursor: pointer;
 }
 
@@ -149,12 +141,10 @@ a {
 }
 
 #theme-option-container:hover ~ #theme-link {
-  background-color: $theme-link-hover-background;
-  color: $theme-link-hover-color;
+  color: $menu-link-hover-color;
 }
 
 .theme-option:hover:not(.theme-current) {
-  background-color: $theme-option-hover-background;
   color: $theme-option-hover-color;
 }
 
@@ -173,15 +163,11 @@ a {
 }
 
 #lang-link {
-  background-color: $lang-link-background;
-  color: $lang-link-color !important;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 #lang-link:hover {
-  background-color: $lang-link-hover-background;
-  color: $lang-link-hover-color !important;
   cursor: pointer;
 }
 
@@ -207,12 +193,10 @@ a {
 }
 
 #lang-option-container:hover ~ #lang-link {
-  background-color: $lang-link-hover-background;
-  color: $lang-link-hover-color;
+  color: $menu-link-hover-color;
 }
 
 .lang-option:hover:not(.lang-current) {
-  background-color: $lang-option-hover-background;
   color: $lang-option-hover-color;
 }
 
@@ -226,46 +210,59 @@ a {
 
 // LOGO
 
+$bg-width: 720px;
+$bg-height: 720px;
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height; }
+}
+@keyframes         bg-scrolling-reverse {
+  100% { background-position: $bg-width $bg-height;; }
+}
+
 #logo-container {
-  background-color: $logo-container-background;
-  background-image: url(../themes/light/bg-stripe.png);
-  background-position: top center;
-  background-size: cover;
+  height: 2vw;
+  top: 500px;
+  border-top: 1vw solid rgba(8,8,8,0.5);
+  border-bottom: 1vw solid rgba(8,8,8,.5);
+
+  background: url(../themes/dark/bg-stripe.png) repeat 0 0;
+
+  -webkit-animation: bg-scrolling-reverse 40s infinite;
+  -moz-animation:    bg-scrolling-reverse 40s infinite;
+  -o-animation:      bg-scrolling-reverse 40s infinite;
+  animation:         bg-scrolling-reverse 40s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function:    linear;
+  -o-animation-timing-function:      linear;
+  animation-timing-function:         linear;
 }
 
 #logo {
-  line-height: 25vw;
-  font-size: 13vw;
-  font-family: "Audiowide", cursive;
+  font-size: 10vw;
+  font-family: "Girassol", cursive;
   font-weight: bold;
   color: transparent;
   filter: saturate(500%);
   text-shadow: $logo-text-shadow;
   margin-left: 4%;
-}
-
-@supports (-moz-background-clip: text) {
-  #logo {
-    background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
-  }
-}
-
-@supports (-webkit-background-clip: text) {
-  #logo {
-    background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
-  }
-}
-
-@supports (background-clip: text) {
-  #logo {
-    background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
-  }
+  position: relative;
+  bottom: 1.5vw;
+  left: 200px;
 }
 
 // GENERIC
+
+.preview {
+  margin-left: 18px;
+  border: $preview-border;
+  background-color: $preview-background;
+}
 
 .text {
   background-color: $text-background;
@@ -275,14 +272,13 @@ a {
   padding-right: 18px;
   line-height: 24px;
   margin-left: -8px;
-  width: 900px;
 }
 
 @media only screen and (max-width: $SMALL_SCREEN) {
   .text {
     padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    padding-right: 1%;
+    width: 94%;
   }
 }
 

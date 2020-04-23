@@ -251,21 +251,21 @@ a {
 @supports (-moz-background-clip: text) {
   #logo {
     background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-image: url(../themes/light/logo.gif);
   }
 }
 
 @supports (-webkit-background-clip: text) {
   #logo {
     background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-image: url(../themes/light/logo.gif);
   }
 }
 
 @supports (background-clip: text) {
   #logo {
     background-size: 38%;
-    background-image: url(https://media.giphy.com/media/3M9E7L03hNYnfrK6dM/giphy.gif);
+    background-image: url(../themes/light/logo.gif);
   }
 }
 
