@@ -5,34 +5,34 @@ $menu-font-size: 22px;
 
 $color: rgb(224, 224, 224);
 
-$title-color: black;
-$link-color: rgb(224, 224, 224);
+$title-color: white;
+$link-color: rgb(224, 0, 0);
 
 $menu-link-color: rgb(224, 224, 224);
 $menu-link-hover-color: rgb(128, 128, 128);
+$menu-item-background: rgba(0, 0, 0, 0.5);
+$menu-item-hover-background: rgba(0, 0, 0, 0.25);
 
-$theme-options-background: rgb(235, 235, 235);
-$theme-options-border: 3px solid rgba(192, 192, 255, 0.5);
-$theme-option-hover-background: rgb(211, 211, 211);
-$theme-option-hover-color: white;
-$theme-current-background: rgba(192, 192, 255, 0.5);
-
-$lang-options-background: rgb(235, 235, 235);
-$lang-options-border: 3px solid rgba(255, 192, 192, 0.5);
-$lang-option-hover-background: rgb(211, 211, 211);
-$lang-option-hover-color: white;
-$lang-current-background: rgba(255, 192, 192, 0.5);
+$select-options-background: rgb(32, 32, 32);
+$select-options-border: 1px solid black;
+$select-option-color: rgb(224, 224, 224);
+$select-option-hover-background: rgb(64, 64, 64);
+$select-option-hover-color: rgb(128, 128, 128);
+$select-current-background: rgba(8, 8, 8, 0.5);
+$select-current-color: rgb(128, 128, 128);
 
 $logo-background: rgba(192, 192, 192, 0.3);
 $logo-text-shadow: 8px 8px 0px rgba(255,255,255,.7), 0px 0px 0px rgba(8,8,8,.9);
 
-$text-background: rgba(192, 192, 192, 0.3);
+$text-background: rgba(0, 0, 0, 0.5);
+$text-b-text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+$text-b-color: rgb(192, 0, 128);
 
-$time-container-background: rgba(192, 192, 192, 0.3);
-$time-inner-border: 1px solid rgba(64, 64, 64, 0.5);
+$time-container-background: rgba(0, 0, 0, 0.5);
+$time-inner-border: 1px solid black;
 
-$preview-background: rgba(139, 163, 187, 0.2);
-$preview-border: 3px solid rgba(139, 163, 187, 0.5);
+$preview-background: rgba(0, 0, 0, 0.5);
+$preview-border: 2px solid rgb(224, 224, 224);
 
 // HTML & BODY & H2 & A & B
 
@@ -51,18 +51,8 @@ h2 {
   margin-top: 50px;
   margin-bottom: 18px;
   padding-left: 18px;
-  font-size: 24px;
+  font-size: 35px;
   color: $title-color;
-}
-
-@media only screen and (max-width: $LARGE_SCREEN) {
-  h2 {
-    font-size: 30px;
-  }
-
-  #about-text-container b {
-    font-size: 24px;
-  }
 }
 
 a {
@@ -87,7 +77,6 @@ a {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 70px;
   }
 }
 
@@ -102,10 +91,17 @@ a {
 
 .menu-item {
   margin-right: 30px;
+  background-color: $menu-item-background;
+  padding: 20px;
+}
+
+.menu-item:hover {
+  background-color: $menu-item-hover-background;
 }
 
 #home-button {
   width: 100px;
+  padding: 20px;
 }
 
 // THEME SELECT
@@ -120,24 +116,30 @@ a {
 }
 
 #theme-button:hover > #theme-option-container {
-  height: 125px;
-  width: 106px;
+  height: 157px;
+  width: 137px;
 }
 
 .theme-option {
-  width: 82px;
+  width: 117px;
+  color: $select-option-color !important;
+  padding: 15px;
+}
+
+.theme-option:not(.theme-current):hover {
+  color: $select-option-hover-color !important;
 }
 
 #theme-options {
-  width: 100px;
-  height: 108px;
-  background-color: $theme-options-background;
-  border: $theme-options-border;
+  width: 135px;
+  height: 144px;
+  background-color: $select-options-background;
+  border: $select-options-border;
 }
 
 #theme-option-container {
-  left: -12px;
-  top: 18px;
+  left: 8px;
+  top: 38px;
 }
 
 #theme-option-container:hover ~ #theme-link {
@@ -145,11 +147,12 @@ a {
 }
 
 .theme-option:hover:not(.theme-current) {
-  color: $theme-option-hover-color;
+  color: $select-option-hover-color;
 }
 
 .theme-current {
-  background-color: $theme-current-background;
+  background-color: $select-current-background;
+  color: $select-current-color !important;
 }
 
 .theme-current:active {
@@ -172,24 +175,30 @@ a {
 }
 
 #lang-button:hover > #lang-option-container {
-  height: 123px;
-  width: 143px;
+  height: 157px;
+  width: 174px;
 }
 
 .lang-option {
-  width: 119px;
+  width: 154px;
+  color: $select-option-color !important;
+  padding: 15px;
+}
+
+.lang-option:not(.lang-current):hover {
+  color: $select-option-hover-color !important;
 }
 
 #lang-options {
-  width: 137px;
-  height: 108px;
-  border: $lang-options-border;
-  background-color: $lang-options-background;
+  width: 172px;
+  height: 144px;
+  border: $select-options-border;
+  background-color: $select-options-background;
 }
 
 #lang-option-container {
-  left: -12px;
-  top: 18px;
+  left: 8px;
+  top: 38px;
 }
 
 #lang-option-container:hover ~ #lang-link {
@@ -197,11 +206,12 @@ a {
 }
 
 .lang-option:hover:not(.lang-current) {
-  color: $lang-option-hover-color;
+  color: $select-option-hover-color;
 }
 
 .lang-current {
-  background-color: $lang-current-background;
+  background-color: $select-current-background;
+  color: $select-current-color !important;
 }
 
 .lang-current:active {
@@ -259,19 +269,23 @@ $bg-height: 720px;
 // GENERIC
 
 .preview {
-  margin-left: 18px;
+  margin-left: 25px;
   border: $preview-border;
   background-color: $preview-background;
+  border-radius: 10px;
 }
 
 .text {
   background-color: $text-background;
-  padding-left: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 18px;
+  padding: 25px;
+  border-radius: 10px;
   line-height: 24px;
   margin-left: -8px;
+}
+
+.text b {
+  color: $text-b-color;
+  text-shadow: $text-b-text-shadow;
 }
 
 @media only screen and (max-width: $SMALL_SCREEN) {
@@ -282,18 +296,26 @@ $bg-height: 720px;
   }
 }
 
+#about-text-container b {
+  font-size: 24px;
+}
+
 .time-container {
   background-color: $time-container-background;
   width: 400px;
   height: 68px;
-  padding-right: 5px;
+  padding: 10px;
+  padding-right: 15px;
+  border-radius: 10px;
 }
 
 .time-container-small {
   background-color: $time-container-background;
   width: 400px;
   height: 34px;
-  padding-right: 5px;
+  padding: 10px;
+  padding-right: 15px;
+  border-radius: 10px;
 }
 
 .time-created {

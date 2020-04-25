@@ -4,7 +4,7 @@
      <div th:if="${updated != null}" class="time-updated" th:inline="text"
           th:classappend="${created != null} ? time-updated-border : null">[[#{time.updated}]]
           <div class="time" th:inline="text" th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(updated).getTime()},
-                      path = ${currentTheme.equals('vivid') ? 'themes/vivid/' : 'themes/light/'}">
+                      path = 'themes/' + ${currentTheme} + '/'">
             [[${updated}]]
             <img th:attr="title=#{time.updated.today}" th:src="${path} + 'time_today.svg'"
                  width="22"
@@ -45,7 +45,7 @@
     <div th:if="${created != null}" class="time-created" th:inline="text">[[#{time.created}]]
         <div class="time" th:inline="text"
              th:with="timePassed = ${#execInfo.now.getTimeInMillis() - new java.text.SimpleDateFormat('dd.MM.yyyy').parse(created).getTime()},
-                      path = ${currentTheme.equals('vivid') ? 'themes/vivid/' : 'themes/light/'}">
+                      path = 'themes/' + ${currentTheme} + '/'">
             [[${created}]]
             <img th:attr="title=#{time.created.today}" th:src="${path} + time_today.svg"
                  width="22"
