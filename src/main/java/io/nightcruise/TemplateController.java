@@ -49,7 +49,7 @@ public class TemplateController {
         model.addAttribute("currentPage", "about");
 
         model.addAttribute("websiteCreated", "23.02.2020");
-        model.addAttribute("websiteUpdated", "22.03.2020");
+        model.addAttribute("websiteUpdated", "10.05.2020");
         return "about";
     }
 
