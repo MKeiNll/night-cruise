@@ -1,6 +1,6 @@
-# nightcruise
+# Night Cruise
 
-A personal website.
+A personal website / portfolio.
 Made on Spring Boot.
 Uses Thymeleaf, Sass & Gradle.
 
